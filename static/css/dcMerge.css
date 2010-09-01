@@ -1,0 +1,3249 @@
+/* May 13, 2009 */
+/* v1.0.0 */
+
+body {
+	margin-left: 16px;
+	font: Tahoma, Arial, Verdana;
+	font-size: 13px;
+	line-height: 19px;
+	color: #2E2E2;
+	background-color: white;
+}
+
+img {
+	border: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	
+	color: #0157B0;
+}
+
+a:visited {
+	color: #0157B0;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #0157B0;
+}
+
+td {
+	vertical-align: top;
+}
+
+h1 {
+	/*font-family: Tahoma, Arial;*/
+	font-size: 22px;
+	color: #2E2E2E;
+	font-weight: 200;
+	
+	margin-bottom: 16px;
+}
+
+h2 {
+	/*font-family: Tahoma, Arial;*/
+	font-size: 16px;
+	color: #2E2E2E;
+	font-weight: bold;
+	
+	margin-bottom: 12px;
+}
+
+p {
+	/*font-family: Tahoma, Arial;*/
+	font-size: 13px;
+	color: #2E2E2E;
+}
+
+
+
+#layout {
+	/*position: relative;	*/
+}
+
+.dcBody {
+	text-align: center;
+	width: 972px;
+	position: relative;
+}
+
+.dcRegMain {
+	padding-top: 32px;
+	padding-left: 14px !important; /* workingHere */
+	padding-right: 14px !important;
+	background-repeat:repeat-x;
+}
+
+.dcSkin0 .dcRegMain {
+	padding-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.dcLayoutVertSaver .dcRegMain {
+	padding-top: 0;
+}
+
+.dcRegLeft {
+	/* empty */
+}
+
+.dcRegLeftCenter {
+	padding-right: 24px;
+	width: 694px;
+	
+	text-align: left;
+}
+
+.dcPageClass_centerSite .dcRegLeft {
+	padding-right: 0;
+}
+
+.dcPageClass_centerSite .dcContent .dcRegRight,
+.dcPageClass_centerSite .dcContent.dcRegRight {
+	/*padding-left: 24px;*/
+	padding-left: 0;
+	
+	/*padding-right: 24px;*/
+	padding-right: 0;
+}
+
+.dcSkin0 .dcContent .dcRegRight,
+.dcSkin0 .dcContent.dcRegRight {
+	padding-left: 24px;
+	padding-right: 0;
+}
+
+
+.dcSkin0 .dcSkinBgImg {
+	/* empty - skin used to set width wider since there is no bgcolor */
+}
+
+.dcSkin1 .dcSkinBgImg,
+.dcSkin1A .dcSkinBgImg {
+	background-image:url(../img/page_bg1.jpg);
+}
+
+.dcSkin2 .dcSkinBgImg {
+	background-image:url(../img/page_bg2.jpg);
+}
+
+.dcSkin3 .dcSkinBgImg {
+	background-image:url(../img/page_bg3.jpg);
+}
+
+.dcSkin4 { /* DCPS, */
+	/* empty */
+} 
+
+
+
+.dcSkin1 .dcSkinBg {
+	background-color: #DFDFDF;
+}
+
+.dcSkin1 .dcTopNavSubNavTopicPath .dcTopicPath {
+	background-color: #F2F2F2;
+}
+
+.dcSkin1A .dcSkinBg {
+	background-color: #F2F2F2;
+}
+
+.dcSkin2 .dcSkinBg {
+	background-color: #F8F7E7;
+}
+
+.dcSkin3 .dcSkinBg {
+	background-color: #F3F3E6;
+}
+
+
+/* =================================================== */
+/* DCPS */
+/* =================================================== */
+body.dcSkin4 {
+	background-color: white;
+}
+
+.dcSkin4 .dcPageWrapper {
+	width: 1006px;
+	background-color: #C7CEDB;
+	border-left: 1px solid #A4AFB5;
+	border-right: 1px solid #A4AFB5;
+	border-bottom: 1px solid #A4AFB5;
+}
+
+.dcSkin4 .dcSkinBg {
+	background-color: #C7CEDB;
+}
+
+.dcSkin4 a {
+	color: #005283;
+}
+
+
+
+
+
+
+
+/* Page Types */
+.dcPageClass_centerSite .dcRegCenter {
+	padding-left: 24px; /* would be margin, but being applied to TD */
+	padding-right: 24px;
+	width: 490px;
+}
+
+
+
+.dcPageClass_agencySite .dcRegMain {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.dcPageClass_agencySite .dcRegLeft {
+	padding-right: 14px !important;
+	width: 319px;
+}
+
+.dcPageClass_agencySite.dcPageClass_accordion .dcRegLeft {
+	padding-right: 0 !important;
+	margin-right: 0 !important;
+}
+
+.dcPageClass_agencySite .dcRegCenter {
+	padding-left: 14px;
+	padding-right: 14px;
+	width: 319px;
+}
+
+.dcPageClass_agencySite .dcRegCenterRight {
+	padding-left: 14px;
+	padding-right: 14px;
+}
+
+.dcPageClass_agencySite .dcRegRight {
+	padding-left: 14px;
+	padding-right: 0 !important;
+	width: 319px;
+}
+
+.dcPageClass_agencySite.dcPageClass_accordion .dcRegMain {
+	padding-left: 14px !important;
+}
+
+.dcPageClass_agencySite_gdc.dcPageClass_sub .dcRegMain {
+	padding-left: 14px !important;
+}
+
+.dcPageClass_agencySite_gdc.dcPageClass_sub .dcRegLeft,
+.dcPageClass_agencySite_gdc.dcPageClass_sub .dcRegCenter {
+	width: 340px;
+}
+
+.dcPageClass_agencySite_gdc.dcPageClass_sub .dcRegRight {
+	width: 220px;
+}
+
+.dcPageClass_agencySite_film .dcRegMain {
+	/* empty */
+}
+
+
+
+
+
+
+
+
+
+/* Phase II Effort */
+
+.dcPageClass_photo {
+	/* empty */
+} 
+
+.dcPageClass_photo .dcRegLeft {
+	width: 221px;
+	padding-right: 0 !important;
+}
+
+
+
+
+
+
+.dcPageClass_forum {
+	/* empty */
+}
+
+.dcPageClass_forum .dcHighlights h2 {
+	margin-top: 40px;
+}
+
+.dcPageClass_forum .dcRegLeft {
+	width: 180px;
+	padding-right: 0 !important;
+}
+
+.dcPageClass_forum .dcRegCenterRight {
+	/* empty */
+}
+
+.dcPageClass_forumMain .dcRegCenterRight {
+	/* empty */
+}
+
+.dcLayout_leftJustify .dcRegMain {
+	padding-left: 14px !important;	
+}
+
+.dcLayout_leftJustify .dcTitle {
+	text-align: left;
+}
+
+.dcLayout_leftJustify .dcTitle h1{
+	padding: 0;
+	margin: -2px;
+}
+
+.dcLayout_dcTopNavSubNavTopicPath .dcRegMain {
+	padding-top: 10px;
+}
+
+
+
+
+* html .dcPageClass_agencySite .dcSubNav_item select { /* IE6 hack */
+	margin-bottom: 4px;
+}
+
+* html .dcPageClass_film .dcSubNav_item select { /* IE6 hack */
+	margin-bottom: 4px;
+}
+
+
+
+
+.dcMasthead {
+	width: 100%;
+}
+
+.dcLogo {
+	margin-left: 17px;
+	margin-right: 44px;
+	margin-top: 41px;
+	width: 150px;
+}
+
+.dcSearchBar {
+	margin-right: 0;
+	margin-top: 56px;
+	vertical-align: top;
+	text-align: left;
+	padding-left: 25px;
+}
+
+.dcSearchBar fieldset {
+	vertical-align: top;
+	border: none;
+}
+
+.dcSearchForm_leftCap img {
+		margin: 0;
+		padding: 0;
+}
+
+.dcSearchForm {
+	background-repeat: repeat-x;
+	background-image: url(../img/gsearchbar_repeat.jpg);
+	background-position: top left;
+	
+	width:331px; 
+	height:28px; 
+	/*line-height: 33px;*/
+	
+	border: 0;
+	
+	margin-left: 0;
+	margin-top: 0px;
+	margin-bottom: 0;
+	
+	padding-left: 10px;
+	padding-top: 5px;
+	
+	font-size: 16px;
+}
+
+.dcSearchForm,
+.dcSearchButton {
+	position: relative;	
+	margin-bottom: 0;
+}
+
+.dcSearchForm_leftCap {
+	position: relative;
+	margin-bottom: 0;
+}
+
+.dcSearchForm,
+.dcSearchButton {
+	*top: 2px; /* to close/remove 1px white space between this and mirror img in IE(7) */
+}
+
+.dcSearchForm_leftCap {
+	*top: 3px; /* IE hack */
+}
+
+.dcSearchFilter {
+	background:url(../img/gsearch_mirror.jpg) no-repeat;
+	background-position:  0px 0px;
+}
+
+.dcSearchButton {
+	margin-top: 0px;
+	margin-left: -4px;
+}
+
+.dcSearchButton {
+	*margin-top: 1px; /* target IE6+IE7 */
+}
+
+.dcActionBar {
+	margin-top: 22px;			
+	height: 30px;
+	
+	font-size: 11px;
+	color: #2E2E2E;	
+	
+	vertical-align: top;
+	
+	background-color: #E2E2E2;
+}
+
+.dcActionBar .dcLeftCorner {
+	background-image: url(../img/regBoxLeft.gif);
+	background-repeat: no-repeat;
+	width: 8px;
+	height: 30px;
+	float: left;
+}
+
+.dcActionBar .dcRightCorner {
+	background-image: url(../img/regBoxRight.gif);
+	background-repeat: no-repeat;
+	width: 8px;
+	height: 30px;
+	float: right;
+}
+
+.dcActionBar a {
+	color: #0157B0;
+	text-decoration: none;
+}
+
+.dcActionBar ul {
+	background-color: #E2E2E2;
+	height: 100%;
+	text-align: center;
+	
+	vertical-align: top;
+}
+
+.dcActionBar li {
+	display: inline;
+	position: relative;
+	top: .75em;
+	height: 30px;
+	padding: 2px;
+	
+	position: relative;
+	top: 5px;
+
+	vertical-align: top;
+}
+
+.dcActionBar li {
+	*top: 7px; /* IE hack */
+}
+
+.dcActionBar li.dcFirstChild {
+	/* empty */
+}
+
+.dcMasthead .dcMessage {
+	text-align: right;
+	margin-bottom: 8px;
+}
+
+.dcMasthead .dcMessage .dcAlert {
+	padding-left: 6px;
+}
+
+.dcMasthead .dcMessage .dcAlert em {
+	font-style: normal;
+	color: red;
+}
+
+.dcMasthead .dcMessage .dcAlert a {
+	color: red;
+}
+
+.dcMasthead .dcMessage .dcAlert a:hover {
+	text-decoration: underline;
+}
+
+
+
+/* =================================================== */
+/* DCPS */
+/* =================================================== */
+.dcSkin4 .dcMasthead {
+	background-image: url(../img/dcps/masthead_verticalgradient.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #C7CEDB;
+}
+
+.dcSkin4 .dcMasthead {
+	padding-right: 14px;
+}
+
+.dcPageClass_dcps .dcMasthead .dcLogo {
+	margin-top: 0;
+	margin-left: 0;
+}
+
+.dcPageClass_dcps td.dcLogo {
+	text-align: left;
+}
+
+.dcPageClass_dcps .dcMasthead .dcSearchBar {
+	margin-top: 20px;
+}
+
+.dcPageClass_dcps .dcMasthead .dcSearchFilter {
+	background-image: none;
+}
+
+.dcPageClass_dcps .dcMessage {
+	position: relative;
+	top: -6px;
+	margin-bottom: 0;
+}
+
+.dcPageClass_dcps .dcMessage {
+	font-size: 11px;
+}
+
+.dcPageClass_dcps .dcSearchForm {
+	background-image: url(../img/dcps/gsearchbar_repeat.jpg);
+}
+
+
+
+
+.dcTopNav {
+	text-align: left;
+	width: 100%;
+}
+
+.dcTopNav ul {
+	margin-bottom: -3px;
+}
+
+.dcTopNav li {
+	display: inline;
+	margin-right: -4px !important;
+}
+
+.dcTopNav a {
+	text-decoration: none;
+}
+
+.dcTopNav .dcSubNav {
+ 	height: 25px;
+ 	padding: 6px 12px 2px 12px;
+}
+
+.dcTopNav .dcSubNav li a:link {
+ text-decoration: none;
+ color:#000000
+}
+.dcTopNav .dcSubNav li a:visited {
+ text-decoration: none;
+ color:#000000
+}
+.dcTopNav .dcSubNav li a:hover {
+ text-decoration: underline;
+ color:#000000
+}
+
+.dcTopNav .dcSubNav .dcDivider {
+	/*background:transparent url(../lib/yui/build/treeview/assets/sprite-menu.gif) no-repeat scroll -8px 250px;*/
+	
+	color: #959595;
+	padding: 0 .75em 0 .75em;	
+}
+
+.dcTopNav .dcSubNavRight {
+	float: right;
+	height: 22px;	
+}
+
+.dcTopicPath {
+	margin-top: -7px;
+	font-size: 11px;
+}
+
+.dcTopicPath a {
+	color: #0157B0 !important;
+}
+
+
+/* non-DCPS effort Phase II */
+.dcTopNavSubNavTopicPath .dcSubNav {
+	padding-bottom: 10px;
+}
+
+.dcTopNavSubNavTopicPath .dcTopicPath {
+	padding-bottom: 0;
+	padding-top: 10px;
+	padding-left: 14px;
+}
+
+
+.dcPageClass_photo .dcTopNavSubNav,
+.dcPageClass_phase2 .dcTopNavSubNav {
+	padding-bottom: 14px;
+}
+
+.dcPageClass_event.dcPageClass_phase2 .dcTopNavSubNav {
+	padding-bottom: 8px;
+}
+
+.dcPageClass_photo .dcTopNavSubNav .dcSubNav,
+.dcPageClass_phase2 .dcTopNavSubNav .dcSubNav {
+	padding-top: 0;
+	position: relative;
+	bottom: -3px;
+}
+
+
+
+
+
+.dcDepNav {
+	text-align: left;
+}
+
+.dcDepNav li {
+	list-style: none;
+	display: inline;
+	padding-right: 4px;
+}
+
+.dcDepNav_dcra {	
+	background-color: #F1F6FC;
+	
+	padding: 6px 8px 0px 8px;
+	margin-bottom: 16px;
+	
+	border-width: 1px 0 1px 0;
+	border-color: #BAC5DB;
+	border-style: solid;
+	
+	height: 20px;
+	
+	line-height: 15px;
+}
+
+
+.dcDepNav_greenDc {
+	text-align: left;
+	
+	position: relative;
+	margin-left: -16px;
+	padding-right: 32px;
+	
+	width: 100%;
+	height: 41px;
+	
+	background-image: url(../img/greenline.jpg);
+	background-repeat: repeat-x;
+}
+
+* html .dcDepNav_greenDc {
+	width: 940px;  /* IE6 hack */
+	position: absolute;
+	left: 16px;
+}
+
+.dcDepNav_greenDc .dcWrapper {
+	text-align: left;
+	
+	position: relative;
+	top: 1px;	
+	padding-right: 32px;
+	
+	width: 100%;
+	height: 40px;
+	
+	background-image: url(../img/green_gradient.jpg);
+	background-repeat: repeat-x;	
+	background-color: #EBF6D8;	
+}
+
+* html .dcDepNav_greenDc .dcWrapper {
+	padding-right: 16px; /* IE6 hack */
+	position: absolute;
+	width: 956px;
+}
+
+.dcDepNav_greenDc ul {
+	padding-top: 9px;
+	padding-left: 16px;
+}
+
+.dcDepNav_greenDc li.dcDivider {
+	color: #A9ABA5;
+	font-size: 16px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.dcDepNav_greenDc .dcMsg {
+	position: absolute;
+	right: 85px;
+	top: 10px;
+}
+
+
+
+/* SpryAccordion.css - Revision: Spry Preview Release 1.4 */
+
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+
+/* This is the selector for the main Accordion container. For our default style,
+ * we draw borders on the left, right, and bottom. The top border of the Accordion
+ * will be rendered by the first AccordionPanelTab which never moves.
+ *
+ * If you want to constrain the width of the Accordion widget, set a width on
+ * the Accordion container. By default, our accordion expands horizontally to fill
+ * up available space.
+ *
+ * The name of the class ("Accordion") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style the
+ * Accordion container.
+ */
+.Accordion {
+	overflow: hidden;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #CDCCCA;
+	border-bottom-color: #CDCDCD;
+	border-left-color: #CDCCCA;
+	width: 221px;
+	
+	text-align: left;
+}
+
+.Accordion {
+	*margin-top:-3px;
+}
+
+/* This is the selector for the AccordionPanel container which houses the
+ * panel tab and a panel content area. It doesn't render visually, but we
+ * make sure that it has zero margin and padding.
+ *
+ * The name of the class ("AccordionPanel") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style an
+ * accordion panel container.
+*/
+.AccordionPanel {
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+/* This is the selector for the AccordionPanelTab. This container houses
+ * the title for the panel. This is also the container that the user clicks
+ * on to open a specific panel.
+ *
+ * The name of the class ("AccordionPanelTab") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style an
+ * accordion panel tab container.
+ */
+.AccordionPanelTab {
+	background-image: url(../img/accordian_icons/tab_bck.jpg);
+	background-position: bottom left;
+	background-repeat: repeat-x;
+	background-color: white;
+	
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	padding: 0px;
+	border-top-width: 1px;
+	border-bottom-width: 0px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #CDCDCD;
+	border-bottom-color: #CDCDCD;
+
+	line-height: 31px;
+	text-indent: 9px;
+	margin: 0px;
+	height: 33px;
+	width: 221px;
+}
+.AccordionPanelTab1 {
+	background-image: url(../img/accordian_icons/tab_bck.jpg);
+	background-position: bottom left;
+	background-repeat: repeat-x;
+	background-color: white;
+	
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	padding: 0px;
+	border-top-width: 1px;
+	border-bottom-width: 0;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #ffffff;
+	border-bottom-color: #CDCDCD;
+
+	line-height: 22px;
+	
+	text-indent: 9px;
+	margin: 0px;
+	height: 28px;
+	width: 221px;
+}
+
+/* This is the selector for a Panel's Content area. It's important to note that
+ * you should never put any padding on the panel's content area if you plan to
+ * use the Accordions panel animations. Placing a non-zero padding on the content
+ * area can cause the accordion to abruptly grow in height while the panels animate.
+ *
+ * Anyone who styles an Accordion *MUST* specify a height on the Accordion Panel
+ * Content container.
+ *
+ * The name of the class ("AccordionPanelContent") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style an
+ * accordion panel content container.
+ */
+.AccordionPanelContent {
+	overflow: auto;
+	margin: 0px;
+	padding: 0px;
+	/* height: 296px; */ 
+	background-color: #FFFFFF;
+}
+
+/* This is an example of how to change the appearance of the panel tab that is
+ * currently open. The class "AccordionPanelOpen" is programatically added and removed
+ * from panels as the user clicks on the tabs within the Accordion.
+ */
+.AccordionPanelOpen .AccordionPanelTab {
+	background-image: url(../img/accordian_icons/tab_bck.jpg);
+	border-bottom-width: 1px;
+	border-bottom-color: #CDCDCD;
+}
+
+
+/* This is an example of how to change the appearance of the panel tab as the
+ * mouse hovers over it. The class "AccordionPanelTabHover" is programatically added
+ * and removed from panel tab containers as the mouse enters and exits the tab container.
+ */
+.AccordionPanelTabHover {
+	color: #000000;
+}
+.AccordionPanelOpen .AccordionPanelTabHover {
+	color: #000000;
+	
+}
+
+/* This is an example of how to change the appearance of all the panel tabs when the
+ * Accordion has focus. The "AccordionFocused" class is programatically added and removed
+ * whenever the Accordion gains or loses keyboard focus.
+ */
+.AccordionFocused .AccordionPanelTab {
+	background-image: url(../img/accordian_icons/tab_bck.jpg);
+	border-bottom-width: 0px;
+	border-bottom-color: #ffffff;
+}
+.AccordionFocused .AccordionPanelTab1 {
+	background-image: url(../img/accordian_icons/tab_bck.jpg);
+	border-bottom-width: 0px;
+	border-bottom-color: red;
+}
+
+
+/* This is an example of how to change the appearance of the panel tab that is
+ * currently open when the Accordion has focus.
+ */
+.AccordionFocused .AccordionPanelOpen .AccordionPanelTab1 {
+	background-image: url(../img/accordian_icons/tab_bck.jpg);
+	border-bottom-width: 1px;
+	border-bottom-color: #CDCDCD;
+}
+.AccordionFocused .AccordionPanelOpen .AccordionPanelTab {
+	background-image: url(../img/accordian_icons/tab_bck.jpg);
+	border-bottom-width: 1px;
+	border-bottom-color: #CDCDCD;
+	
+	line-height: 31px;
+	
+	color: #2e2e2e;
+	text-indent: 9px;
+
+}
+.AccordionFocused .AccordionPanelOpen .AccordionPanelTab1 {
+	background-image: url(../img/accordian_icons/tab_bck.jpg);
+	border-bottom-width: 1px;
+	border-bottom-color: #CDCDCD;
+	
+	line-height: 20px;
+	
+	color: #2e2e2e;
+	text-indent: 9px;
+
+}
+
+
+
+.AccordionBodyContentLinksArrows {
+	
+	font-size: 15px;
+	color: #0157B0;
+	font-weight: normal;
+	line-height: 15px;
+}
+.sectionspacer {
+	background-image: url(../img/accordian_icons/grey_spacer.jpg);
+	height: 32px;
+	background-repeat: repeat;
+
+}
+
+.AccordionBodyViewAllLinks a:link {font-size: 13px; color: #0157B0; font-weight: normal; height: 32px; text-decoration: none; }
+.AccordionBodyViewAllLinks a:visited {font-size: 13px; color: #0157B0; font-weight: normal; height: 32px; text-decoration: none; }
+.AccordionBodyViewAllLinks a:hover {font-size: 13px; color: #0157B0; font-weight: normal; height: 32px; text-decoration: none; }
+.AccordionBodyViewAllLinks a:active{font-size: 13px; color: #0157B0; font-weight: normal; height: 32px; text-decoration: none; }
+.AccordionBodyViewAllLinks{font-size: 13px; color: #0157B0; font-weight: normal; height: 32px; text-decoration: none; }
+
+
+/* New Team, New CSS Dec08 */
+
+.dcAccordion {
+	*margin-top: -5px; /* IE hack */
+}
+
+.dcAccordion li {
+	list-style: none;
+}
+
+.dcAccordionCapWrapper {
+	height: 5px;
+	text-align: top;
+	position: relative;
+	*top: -5px; /* IE hack */
+}
+
+* html .dcAccordionCapWrapper {
+	top: 5px; /* IE6 hack */
+}
+
+.dcAccordionCap {
+	/* empty */
+}
+
+.dcAccordionPanelWrapper {
+	/* empty */
+}
+
+.dcAccordionPanel h2 {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	color: #0157B0;
+}
+
+.dcAccordionPanelContent {
+	/* empty */
+}
+
+.dcAccordionSubContent {	
+	margin-bottom: 12px;
+	margin-right: 18px;	
+	padding-top: 12px;
+	padding-left: 8px;
+	
+	background-image: url(../img/accordian_icons/grey_spacer.jpg);
+	background-position: 0px -16px;
+	
+	background-repeat: repeat-x;
+	
+}
+
+.dcAccordionSubContent.dcFirstChild,
+.dcAccordionSubContent.dcAccordionBodyViewAllLinks {
+	background: none;
+}
+
+.dcAccordionSubContent h3 {
+	font-weight: normal;
+	font-size: 13px;
+	
+	color: #2E2E2E;
+	line-height: normal;
+}
+
+.dcAccordionSubContent p {
+	font-size: 13px;
+	color: #707070;
+	line-height: normal;
+}
+
+.dcAccordionSubContent a {
+	
+	font-size: 13px;
+	color: #0157B0;
+	font-weight: normal;
+	/*font-family: Tahoma;*/
+	text-decoration: none;
+	
+}
+
+.dcAccordionSubContent a:link  {
+	
+	font-size: 13px;
+	color: #0157B0;
+	font-weight: normal;
+	text-decoration: none;
+}	
+.dcAccordionSubContent a:visited{
+	
+	font-size: 13px;
+	color: #0157B0;
+	font-weight: normal;
+	text-decoration: none;
+}	
+.dcAccordionSubContent a:hover{
+	
+	font-size: 13px;
+	color: #0157B0;
+	font-weight: normal;
+	text-decoration: underline;
+}	
+
+.dcAccordionIcon {
+	float:left;
+	margin-right:10px;
+	margin-top:4px;
+}
+
+.dcAccordionIcon img {
+	width: 45px;
+	height: 60px;
+	border: 0;
+}
+
+.dcLastChild {
+	margin-bottom: 0;
+}
+
+/* ******************** */
+/* Flyout  				*/
+/* ******************** */
+
+.dcFlyoutWrapper {
+	position: absolute; /* for flyout relationship */
+	display: none; /* display on via JS adding class */
+	z-index: 5000;	
+}
+
+.dcFlyout {
+	border: 1px solid #A8A8A8;
+	width:226px; /* when width changes, must also update width in dcAccorion.js */
+	
+	z-index: 2000;
+		
+	position: absolute;
+	top: 0;
+}
+
+.dcFlyoutOn {
+	display: block;	
+}
+
+.dcFlyoutTopBar,
+.dcFlyoutBottomBar {
+	background: url(../img/flyout_gradient.jpg);
+		
+	font-size: 13px;
+	color: #DA1A02;
+	
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	
+	height: 24px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #D3D3D1;
+	border-bottom-color: #D3D3D1;
+	vertical-align: middle;	
+}
+
+* html .dcFlyoutTopBar { /* IE6, but could possibly work as general */
+	background-position: bottom;
+}
+
+
+.dcFlyoutTopBar .dcPagerStatus {	
+	position: absolute;
+	left:0;
+	margin-top: 3px;
+	margin-left: 10px;
+	
+}
+
+.dcFlyoutBottomBar .dcFlyoutBottomBarInfo {
+	position: absolute;
+	left:0;
+	margin-top: 3px;
+	margin-left: 10px;
+	
+}
+
+.dcFlyoutTopBar .dcScrollerUp,
+.dcFlyoutTopBar .dcScrollerUp {
+	text-align: center;
+}
+
+.dcFlyoutTopBar .dcCloseIcon {
+	position: absolute;
+	right: 0;
+	top: -2px;
+	padding: 6px;
+	cursor: pointer;	
+}
+
+.dcFlyout li {
+	height: 44px;
+	
+	line-height: 44px;
+	color: #2e2e2e;
+	background-color: #ffffff;
+	text-decoration:none;
+	border-bottom-width: 1px;
+	border-bottom-color: #D3D3D1;
+	border-bottom-style: solid;
+	font-size: 13px;
+	
+	list-style: none;
+	padding: 0 8px 0 8px;
+}
+
+.dcFlyout li.flyoutOn {		
+	color: #ffffff;
+	background-image: url(../img/flyout_rollover_bck.jpg);
+	background-repeat: repeat;
+	cursor:pointer;	
+	
+	list-style: none;
+}
+
+
+.ofTabHeadRight,
+.ofTabHeadRight a {
+	color: #2E2E2E !important;
+	font-size: 12px;
+}
+
+.ofTabRounded li {
+	height: 22px;
+	margin: -2px;
+}
+
+.ofTabRounded .ofTabHead {
+	/* empty */
+}
+
+.ofTabRounded .ofTabHeadRight {
+	height: 13px;
+}
+
+.ofTopCap {
+	/* empty */
+}
+
+.ofTabRounded li.ofTabli.ofSelected .ofTabHead {
+	z-index: 50 !important;
+	height: 10px;
+	position: relative;
+	top: 4px;
+}
+
+.ofTabContent {
+	width: 100%;
+}
+
+.ofTabContent .ofWrapper {
+	width: 100%;
+}
+
+
+.dcContent {
+	text-align: left;
+	vertical-align: top;
+}
+
+.dcIconButtonSimple {
+	cursor: pointer;
+}
+
+.dcRssIcon {
+	vertical-align: text-top;
+	padding-left: 3px
+} 
+
+.dcPageClass_centerSite .dcContent { 
+	padding-top: 20px;
+}
+
+td.dcContent,
+.dcContent td {
+	vertical-align: top;
+}
+
+.dcContent.dcRegLeft {
+	padding-right: 24px;
+}
+
+
+.dcPageClass_phase2 h1 {
+	font-size: 20px;
+	margin-bottom: 11px;
+}
+
+
+.dcPageClass_centerSite .dcContent h2,
+.dcPageClass_centerSite .dcContent h2.dcCaption {
+	margin-top: 8px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.dcPageClass_phase2 .dcContent h2,
+.dcPageClass_phase2 .dcQuickLinksCallout h2 {
+	font-size: 14px;
+	margin-bottom: 4px;	
+}
+
+.dcPageClass_phase2 .dcQuickLinksCallout h2,
+.dcPageClass_photo .dcQuickLinksCallout h2,
+.dcPageClass_blog .dcQuickLinksCallout h2 {
+	font-weight: normal;
+}
+
+.dcContent h3 {
+	font-size: 16px;
+	color: #5B6F87;
+	
+	margin-top: 24px;
+	margin-bottom: 8px;
+}
+
+.dcPageClass_agencySite.dcPageClass_sub h3 {
+	margin-top: 0 !important;
+	margin-bottom: 8px;
+}
+	
+
+.dcPageClass_centerSite .dcContent h3 {
+	/*font-family: Tahoma, Arial;*/
+	font-size: 14px;
+	font-weight: bold;
+	color: #2E2E2E;
+}
+
+.dcPageClass_centerSite .dcContent h4 {
+	/*font-family: Tahoma, Arial;*/
+	font-size: 13px;
+	font-weight: bold;
+	color: #2E2E2E;
+}
+
+.dcPageClass_agencySite .dcContent h3 {
+	font-size: 13px;
+	color: #2E2E2E;
+}
+
+.dcQuickLinksCallout h2,
+.dcQuickLinksCallout h3 {
+	font-weight: bold;
+	font-size: 13px;
+	text-align: left;
+}
+
+.dcContent p {
+	margin-bottom: 16px;
+}
+
+.dcContent li {
+	list-style-position: outside;
+	font-size: 12px;
+	margin-left: 15px;
+}
+
+.dcPageClass_agencySite .dcContentTitleBar {
+	color: #5B6F87;
+	margin-top: 18px;
+	margin-bottom: 6px;
+}
+
+.dcPageClass_agencySite_dcra .dcHorizLineDot {
+	background-image: url(../img/dots/DCRA_hdots.gif);
+	background-repeat: repeat-x;
+}
+
+.dcPageClass_agencySite_dcra .dcHorizLineDotThick {
+	background-image: url(../img/dots/DCRA_hdots_thick.gif);
+	background-repeat: repeat-x;
+	margin-top: 16px;
+	margin-bottom: 8px;
+}
+
+.dcPageClass_agencySite_gdc .dcHorizLineDot {
+	background-image: url(../img/dots/GDC_hdots.gif);
+	background-repeat: repeat-x;
+}
+
+.dcPageClass_agencySite_gdc .dcHorizLineDotShort {
+	background-image: url(../img/dots/GDC_hdots_short.gif);
+	background-repeat: repeat-x;
+}
+
+
+/** @deprecated */
+.dcHorizLineDot {
+	background-image: url(../img/hline_dot.png);
+	background-repeat: repeat-x;
+	margin: 14px 0 0 0;
+}
+
+.dcVertLineDot {
+	background-image: url(../img/dots/vdots.gif);
+	background-repeat: repeat-y;
+}
+
+.dcCallout {
+	margin-bottom: 14px;
+}
+
+.dcCallout.dcLastChild {
+	margin-bottom: 0px;
+}
+
+
+.dcQuickLinksCallout {
+	text-align: left;
+}
+
+.dcPageClass_agencySite .dcQuickLinksCallout {
+	padding-top: 32px;
+}
+
+.dcPageClass_centerSite .dcQuickLinksCallout {
+	width: 223px;
+}
+	
+.dcQuickLinksCallout table.dcQuickLinksCallout_inner {	
+	margin-left: 14px;
+	margin-right: 14px;
+	text-align: left;
+}
+	
+.dcQuickLinksCallout td {
+	/*font-family: tahoma !important;*/
+	text-align: left;
+}
+
+.dcPageClass_centerSite .dcQuickLinksCallout h2,
+.dcPageClass_centerSite.dcQuickLinksCallout h2 {
+	background-color: #838383;
+	color: #FFFFFF;
+	
+	text-align: left;
+	padding: 4px;
+	padding-left: 14px;
+	font-size: 13px;	
+}
+
+.dcPageClass_centerSite .dcQuickLinksCallout .dcContentWrapper,
+.dcPageClass_centerSite.dcQuickLinksCallout .dcContentWrapper {
+	padding-left: 14px;
+}
+
+
+.dcPageClass_phase2 .dcQuickLinksCallout .dcContentWrapper,
+.dcPageClass_blog .dcQuickLinksCallout .dcContentWrapper,
+.dcPageClass_photo .dcQuickLinksCallout .dcContentWrapper {
+	padding-left: 0;
+	text-align: left;
+}
+
+.dcPageClass_centerSite .dcQuickLinksCallout .dcTitle,
+.dcPageClass_centerSite.dcQuickLinksCallout .dcTitle {
+	text-align: center;
+}
+
+.dcPageClass_agencySite .dcTitle {	
+	text-align: left;
+}
+
+.dcPageClass_agencySite .dcTitle h1 {
+	padding-top: 3px;
+}
+
+
+
+
+
+.dcPageClass_forum .dcQuickLinksCallout h2,
+.dcPageClass_photo .dcQuickLinksCallout h2,
+.dcPageClass_phase2 .dcQuickLinksCallout h2 {
+	background-color:#838383;
+	color:#FFFFFF;
+	font-size:13px;
+	padding:4px 4px 4px 8px;
+	text-align:left;
+	
+	margin-top: 26px;
+}
+
+.dcPageClass_phase2 .dcQuickLinksCallout.dcFirstChild h2 {
+	margin-top: 0;
+}
+
+.dcPageClass_forum .dcQuickLinksCallout p {
+	margin-top: 3px;
+	margin-bottom: 14px;
+}
+
+.dcPageClass_forum .dcQuickLinksCallout .dcPostSummary h3 {
+	margin-top: 18px;
+	margin-bottom: 4px;
+}
+
+
+
+
+
+
+
+.dcPageClass_agencySite .dcContent .dcContentAndList p {
+	margin-bottom: 0;
+	padding-bottom: 4px;
+}
+
+
+.dcPageClass_phase2 .dcHorizRule {
+	margin-top: 18px; border-width: 1px 0 0 0; border-style: dotted; border-color: #2E2E2E; line-height: 14px;
+}
+
+
+
+
+
+
+
+.dcPortrait {
+	padding-top: 14px;
+	padding-bottom: 14px;
+	
+	color: #3254AC; 
+	font-size: 13px; 
+	font-weight: bold;
+}
+
+.dcPortrait span {
+	padding-left: 4px;
+}
+
+.dcSkin1 .dcContentBox {
+	padding: 14px;
+	
+	border-color: #274685;
+	border-style: solid;
+	border-width: 6px 0 0 0;
+	
+	background-image: url(../img/darkblue_gradient.jpg);
+	background-repeat: repeat-x;;
+}
+
+
+
+.dcNewsList li {
+	list-style: disc;
+	color: #0157B0;
+	padding-left: 1px !important;
+	line-height: 19px !important;
+}
+
+.dcNewsList li.dcSelected {
+	color: #2E2E2E;
+}
+
+.dcNewsList .dcDate,
+.dcNewsList .dcCurrentIndicator {
+	padding-right: 10px;
+}
+
+
+.dcRadioHorizList input {
+	margin-left: 13px;
+	margin-right: 3px;
+}
+
+
+.dcPageClass_agencySite .ofTabRounded {
+	width: 690px;
+}
+
+.dcPageClass_agencySite .ofTabContent .ofCallout .ofWrapper {
+	padding: 16px 0 16px 14px;
+	margin-right: -14px;
+	width: 676px;
+}
+
+
+.dcHidden {
+	visibility: hidden;
+}
+
+
+
+
+
+
+.dcThreadSummary .dcIcon,
+.dcPageClass_photo .dcIcon,
+.dcPageClass_phase2 .dcIcon {
+	vertical-align: text-bottom;
+	padding-right: 3px;
+}
+
+.dcThreadSummary .dcRow,
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+* html .dcThreadSummary .dcRow,
+* html .dcContentWrapper .dcRow { /* IE6 hack */	
+	margin-bottom: 6px;
+}
+
+
+
+
+
+
+.dcComments {
+	color: #94BA01;
+}
+
+.dcComments a.dcLink_handOnly {
+	color: inherit;
+}
+
+.dcComments a:hover.dcLink_handOnly {
+	color: inherit;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+.dcPageClass_photo .dcRegLeft,
+.dcPageClass_calendarDetail .dcRegLeft {
+	line-height: 22px;
+}
+
+.dcPageClass_photo .dcRegLeft p,
+.dcPageClass_calendarDetail .dcRegLeft {
+	line-height: 19px;
+}
+
+
+.dcPageClass_phase2 .dcContent ul,
+.dcPageClass_phase2 .dcQuicklinks ul,
+.dcPageClass_phase2 .dcQuicklinksCallout ul,
+.dcPageClass_phase2 .dcContent li,
+.dcPageClass_phase2 .dcQuicklinks li,
+.dcPageClass_phase2 .dcQuicklinksCallout li,
+.dcPageClass_phase2 dl,
+.dcPageClass_phase2 dt,
+.dcPageClass_phase2 dd {
+	display: inline;
+	list-style: none;
+}
+
+.dcPageClass_phase2 .dcQuickLinksCallout dt {
+	font-weight: bold;
+	padding-right: 2px;
+}
+
+
+
+
+
+
+.dcPageClass_photo .dcHorizMediaScroller,
+.dcPageClass_phase2 .dcHorizMediaScroller {
+	background: transparent;
+	border: none;
+	background-image: none;
+		
+	padding-left: 0;	
+}
+
+.dcPageClass_photo .dcHorizMediaScroller,
+.dcPageClass_phase2 .dcHorizMediaScroller {
+	*padding-top: 0;
+	*margin-top: 12px;		
+}
+
+
+
+
+
+
+
+.dcPageClass_photo .dcHorizMediaScroller .dcThumbWrapper,
+.dcPageClass_phase2 .dcHorizMediaScroller .dcThumbWrapper {
+	padding-right: 12px;
+}
+
+.dcPageClass_photo .dcHorizMediaScroller .dcThumbWrapper a .dcLabel,
+.dcPageClass_phase2 .dcHorizMediaScroller .dcThumbWrapper a .dcLabel {
+	font-weight: normal;
+}
+
+
+.dcPageClass_phase2 .dcHorizMediaScroller .dcThumbListWrapper,
+.dcPageClass_photo .dcHorizMediaScroller .dcThumbListWrapper,
+.dcPageClass_slideshow .dcHorizMediaScroller .dcThumbListWrapper  {
+	width: auto;	
+}
+
+
+.dcHotTopic,
+.dcPopular {
+	border: 1px solid #D5CCBE;
+	
+	background-image:url(../img/mydc/bricklet_bg.gif);
+	background-position:left bottom;
+	background-repeat:repeat-x;
+	
+	padding: 12px 6px 12px 8px;
+	
+	margin-left: 10px;
+	margin-bottom: 20px; 
+	
+	width: 150px;
+	
+	float: left;
+	
+	text-align: left;
+}
+
+.dcHotTopic.dcFirstChild,
+.dcPopular.dcFirstChild {
+	margin-left: 0;
+}
+
+.dcHotTopic h3,
+.dcPopular h3 {
+	margin-top: 0;	
+	padding-top: 0;
+	
+	margin-bottom: 2px;
+	
+	font-size: 13px;
+}
+
+.dcPopular h3 {
+	margin-bottom: 6px;
+}
+
+.dcPopular .dcMore {
+	margin-top: 12px;
+}
+
+.dcHotTopic .dcPostSummary {
+	margin-top: 12px;
+}
+
+.dcHotTopic ul,
+.dcHotTopic li,
+.dcPageClass_forum .dcQuickLinksCallout ul,
+.dcPageClass_forum .dcQuickLinksCallout li {
+	display: inline;
+	list-style: none;
+	margin-left: 0;
+	padding-right: 0;
+}
+
+.dcPopular ul,
+.dcPopular li {	
+	list-style: none;
+	margin-left: 0;
+	padding-right: 0;	
+}
+
+
+
+
+.dcPictureContent {
+	text-align: left;
+}
+
+.dcPictureContent h1 {
+	/* empty */.
+}
+
+.dcPictureContent .dcPictureFrame {
+	background-color:#F6F6F7;
+	border:1px solid #B4B4B4;
+	padding: 10px;
+	text-align: center;
+	
+	margin-bottom: 18px; 	
+}
+
+.dcPictureContent .dcSansPicture {
+	/* empty */
+}
+
+.dcPictureContent .dcCaption {
+	/* empty */
+}
+
+.dcPictureContent .dcDate {
+	/* empty */
+}
+
+
+
+	
+	
+.dcMediaContent .dcRegMain {
+	padding-right: 0 !important;
+}
+
+.dcMediaContent .dcRegRight {
+	padding-left: 24px;
+	padding-right: 0;
+}
+
+.dcMediaContent .dcRegMain {
+	padding-top: 4px;
+	text-align: left;
+}
+
+.dcMediaContent .dcTitle td {
+	text-align: left;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	height: 30px;
+}
+
+.dcMediaContent .dcColPlayer {
+	width: 444px;
+}
+
+.dcMediaContent .dcColCallout {
+	padding-left: 14px;
+	margin-right: 12px;
+	padding-right: 12px;
+}
+
+.dcMediaContent .dcMediaScroller {
+	font-size: 11px;
+}
+
+.dcMediaContent .dcMediaPlayerBg { 
+	background-image:url(../img/moviescenes_bck.jpg);
+	background-repeat:repeat-x;
+}
+
+.dcMediaPlayerBg h2 {
+	color: #FFFFFF;
+	margin-top: 24px;
+	margin-bottom: 4px;
+}
+
+.dcMediaPlayerBg h2.dcFirstChild {
+	margin-top: 12px;
+	margin-bottom: 12px;
+	margin-left: 8px;
+	padding-right: 12px;
+}
+
+.dcMediaContent .dcCallout {
+	text-align: left;
+	display: block;
+	margin-top: 9px;
+	margin-bottom: 18px;
+	margin-right: 12px;
+	
+	padding-bottom: 18px;
+	
+	border-color: #828A93;
+	border-width: 0 0 1px 0;
+	border-style: solid;
+}
+
+.dcMediaContent .dcCallout.dcLastChild {
+	border: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.dcMediaContent .dcColCallout h2,
+.dcMediaContent .dcColCallout h2.firstChild {
+	margin-left: 0;
+}
+
+.dcMediaContent .dcCallout h3 {
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+
+.dcMediaContent .dcCallout p {
+	font-size: 13px;
+}
+
+.dcMediaContent .dcIcon {
+	float: left;
+	padding-right: 12px;
+}
+
+.dcMediaContent .dcMediaPlayerBg h2.dcInverse {
+	color: #5B6F87;
+}
+
+.dcMediaContent .dcMediaPlayerBg .dcContent h2.dcFirstChild {
+	margin-left: 0;
+	margin-bottom: 4px;
+}
+
+.dcMediaContent .dcContent td {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.dcMediaContent .dcContent h2 {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.dcMediaContent .dcContent p {
+	padding-right: 20px;
+}
+
+.dcMediaPlayer {
+	margin-left: -1px;
+	padding-left: 0;
+}
+
+
+
+	
+
+
+
+.dcHighlights {
+	text-align: center;
+	margin-left: 20px;
+	position: relative;
+	
+	height: 340px; /* w/o this, sometimes IE7 doesn't display */
+}	
+
+.dcHighlights .dcArrow {
+	padding-top: 59px;
+	padding-right: 4px;
+	padding-left: 4px;
+}
+
+.dcHighlights h2 {
+	/*font-family: tahoma;*/
+	font-size: 22px;
+	font-weight: normal;
+	color: #2E2E2E;
+	text-align: left;
+	margin-left: 10px;
+}
+
+.dcHighlights h2 em {
+	/*font-family: tahoma;*/
+	font-size: 22px;
+	font-weight: bold;
+	color: #898989;
+	font-style: normal;
+}
+
+.dcHighlights .dcThumbScrollWrapper table {
+	width: 951px;
+}
+
+* html .dcHighlights .dcThumbScrollWrapper table {
+	position: relative;
+	top: 35px;
+}
+
+* html .dcHighlights .dcArrow {
+	position: relative; /* IE6 hack */
+	left: 0;
+	top: 30px;
+}
+
+.dcHighlights .dcThumbScrollWrapper td {
+	width: 274px;	
+}
+
+.dcHighlights .dcThumbScrollWrapper img {
+	/*width: 274px;
+	height: 251px;*/
+	padding-right: 3px;
+}
+
+/*.dcHighlights .dcVideoThumb .dcWrapper {
+	position: relative;
+}
+
+.dcHighlights .dcVideoThumb .dcPlayButton {
+	position: absolute;
+	top: 67px;
+	left: 109px;
+	z-index: 100;
+}*/
+
+/*
+.dcHighlights li {
+	margin-left: 30px;
+	
+	display: inline;
+}
+
+.dcHighlights li.firstChild {
+	margin-left: 0;
+}
+*/
+
+
+
+
+
+
+
+
+.dcHorizMediaScroller div#wn	{
+	position:relative;
+	width:625px;
+	height:70px;
+	overflow:hidden;
+}
+
+.dcHorizMediaScroller {
+	padding: 10px;
+	
+	/*height: 84px;*/
+	
+	background-color: #BBC1CD;
+	background-image:url(../img/scrolling_bck.jpg);
+	background-repeat:repeat-x;
+	background-position: top left;
+	
+	border-color: #828A93;
+	border-style: solid;
+	border-width: 1px 0 0 0;
+}
+
+.dcHorizMediaScroller .dcThumbListWrapper {
+	width: 100%;	
+}
+
+.dcHorizMediaScroller h3 {
+	padding-bottom: 12px;
+	font-size: 13px;
+	font-weight: bold;
+	/*font-family: Tahoma, Arial;*/
+}
+
+.dcBricklet .dcHorizMediaScroller h3,
+.dcBricklet .dcHorizMediaScroller .dcThumbWrapper {
+	padding-bottom: 0;
+}
+
+.dcBricklet .dcHorizMediaScroller .dcThumbWrapper .dcLabel {
+	line-height: 15px;
+} 
+
+.dcHorizMediaScroller .dcArrow {
+	padding-top: 17px;
+}
+
+.dcHorizMediaScroller .dcArrowLeft {
+	padding-right: 8px;
+}
+
+.dcHorizMediaScroller .dcArrowRight {
+	padding-left: 8px;
+	padding-right: 9px;
+}
+
+.dcHorizMediaScroller .dcThumbWrapper {
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-bottom: 12px;
+}
+
+.dcHorizMediaScroller .dcThumbWrapper.dcFirstChild {
+	padding-left: 0;
+}
+
+.dcHorizMediaScroller .dcThumbWrapper.dcLastChild {
+	padding-right: 0;
+}
+
+.dcHorizMediaScroller .dcThumbWrapper .dcLabel {
+	text-align: center;
+	font-size:11px;
+	font-weight: bold;
+	padding-top: 3px;	
+}
+
+.dcHorizMediaScroller .dcThumbWrapper a .dcLabel {
+	text-align: center;
+	font-size:11px;
+	color: #2E2E2E;
+	padding-top: 0;
+}
+
+.dcHorizMediaScroller .dcThumbWrapper a:hover .dcLabel {
+	text-decoration: underline;
+	color: #0157B0;
+}
+
+
+
+
+
+
+
+.dcVideoGrid {
+	width: 324px;
+}
+
+.dcVideoGrid td {
+	vertical-align: top;
+}
+
+.dcVideoGrid .dcThumbContent {
+	display:none;
+}
+
+.dcVideoGrid .dcThumbContent.dcSelected {
+	display:block;
+}
+
+.dcVideoGrid .dcThumb {
+	padding-top: 12px;
+	padding-right: 10px;
+	
+	position: relative;
+} 
+
+.dcVideoGrid .dcThumb.dcLastChild {
+	padding-right: 0;
+}
+
+.dcVideoGrid .dcThumbContent {
+	padding-top: 14px;
+}
+
+.dcVideoGrid .dcTrailerButton {
+	position: absolute;
+	left: 0;
+	top: 68px;
+}
+
+
+
+
+
+
+.dcInfoNav {
+	width: 203px;
+}
+
+.dcInfoNav ul {
+	height: 600px;
+}
+
+.dcInfoNav li {
+	list-style: none;
+	font-size: 12px;
+	
+	padding: 10px 4px 0 0;
+}
+
+.dcInfoNav li a {
+	padding-left: 2px;
+}
+
+.dcInfoNav a:hover {
+	color: #2E2E2E;
+	text-decoration: none;
+}
+
+.dcInfoNav .dcArrow {
+	display: inline;
+}
+
+.dcInfoNav .dcArrow {
+	visibility: hidden;
+}
+
+.dcInfoNav .dcSelected .dcArrow {
+	visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+.dcPageClass_forum .dcContent h2 {
+	margin-top: 24px;
+}
+
+.dcPageClass_forum .dcForumRow .dcContent h2 {
+	margin-top: 0;
+}
+
+.dcPageClass_forum .dcSubPost .dcContent h2 {
+	font-size: 13px;
+}
+
+
+
+
+
+
+
+.dcForumRow td {
+	padding-top: 24px;
+}
+
+
+.dcPaginator * {
+	font-size: 12px;
+}
+
+.dcPaginator {
+	float: right;
+}
+
+.dcPaginator ul,
+.dcPaginator li,
+.dcPaginator dl,
+.dcPaginator dt,
+.dcPaginator dd,
+.dcThreadSummary ul,
+.dcThreadSummary li,
+.dcThreadSummary dl,
+.dcThreadSummary dt,
+.dcThreadSummary dd {
+	display: inline;
+	list-style: none;
+}
+
+.dcPaginator dt,
+.dcThreadSummary dt {
+	font-weight: bold;
+}
+
+.dcPaginator .dcDivider {
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.dcPaginator li li {
+	padding-left: 3px;
+}
+
+.dcThreadSummary li {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0;
+}
+
+.dcThreadSummary .dcDivider {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.dcThreadSummary dt {
+	padding-right: 3px;
+}
+
+
+.dcThreadSummary {	
+	vertical-align: top;
+}
+
+.dcThreadSummary .dcAvatar {
+	float: left;
+	padding-right: 10px;
+}
+
+.dcThreadSummary *,
+.dcThreadSummary h3 {
+	font-size: 13px;
+}
+
+.dcThreadSummary h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+}
+
+.dcThreadAuthorSummary {
+	line-height: 16px;
+}
+
+
+
+
+
+
+.dcThreadContent .dcTimestamp {
+	float: right;
+}
+
+.dcForumActionBar .dcButton {
+	float: right;
+	padding-left: 6px;
+}
+
+.dcThreadContent .dcLastP {
+	padding-bottom: 0;
+	margin-bottom: 4px;
+}
+
+.dcForumListBar td {
+	background-image: url(../img/dots/GDC_hdots.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	
+	padding-top: 14px;
+	padding-bottom: 4px;
+}
+
+.dcForumListBar ul,
+.dcForumListBar li {
+	display: inline;
+	list-style: none;	
+}
+
+.dcForumListBar li {
+	margin-left: 0;
+	padding-left: 0;
+	
+	padding-right: 2px;
+}
+
+.dcSubPost .dcIconButton {
+	float: left;
+	padding-right: 3px;
+	padding-top: 2px;	
+}
+
+.dcSubPost .dcRegLeft {
+	background-image: url(../img/dots/GDC_hdots.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+.dcSubPost.dcLastChild .dcRegLeft {
+	background-image: none;		
+}
+
+.dcSubPost .dcForumActionBar {
+	padding-bottom: 30px;
+}
+
+.dcPopup h5 {
+	margin-bottom: 8px;
+	padding-bottom: 0;
+}
+
+.dcPopup p {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+
+
+
+
+/* Min/Max Show/Hide */
+
+.dcPageClass_forum .dcHidden {
+	display: none;
+}
+
+.dcMinView .dcThreadAuthorSummaryDetail {
+	display: none;
+}
+
+.dcMinView .dcForumActionBar {
+	display: none;
+}
+
+.dcMinView .dcAvatar {
+	display: none;
+}
+
+.dcAvatarMin {
+	display: none;
+}
+
+.dcMinView .dcAvatarMin {
+	display: inline;
+}
+
+.dcMinView .dcThreadSummary .dcRow {
+	display: none;
+}
+
+.dcMinView .dcThreadContent p {
+	display: none;
+}
+
+.dcContentMin {
+	display: none;
+}
+
+.dcMinView .dcContentMin {
+	display: block !important;
+}
+
+.dcMinView * {
+	color: #AAA297 !important;
+}
+
+a.dcDisabled {
+	text-decoration: none;
+	color: #2E2E2E;
+}
+
+a.dcDisabled:hover {
+	text-decoration: none;
+	color: #2E2E2E;
+}
+
+
+
+
+
+
+
+/* Forum Main -Specific */
+.dcBricklet .dcContent {
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.dcBricklet .dcTitleBar h2 {
+	margin-top: 0;
+}
+
+
+
+
+
+
+
+.dcFeaturedForum {
+	background-color: white;
+}
+
+.dcFeaturedForum p a {
+	padding-left: 4px;
+}
+
+.dcFeaturedForum table {
+	width: 100%;
+}
+
+.dcFeaturedForum td,
+.dcPopularForum td.dcCol2 {
+	border-bottom: 1px dotted #2E2E2E;
+}
+
+.dcFeaturedForum tr.dcLastChild td,
+.dcPopularForum tr.dcLastChild td {
+	border-bottom: none;
+}
+
+.dcFeaturedForum p {
+	margin-bottom: 12px;
+}
+
+.dcFeaturedForum .dcCol1 {
+	width: 480px;
+}
+
+.dcFeaturedForum .dcCol2 {
+	width: 94px;
+	text-align: right;
+}
+
+.dcFeaturedForum .dcCol3 {
+	text-align: right;	
+}
+
+.dcFeaturedForum .dcCol2,
+.dcFeaturedForum .dcCol3 {
+	vertical-align: bottom;
+}
+
+.dcFeaturedForum .dcCol2 p {
+	padding-right: 30px;
+}
+
+.dcFeaturedForum .dcCol3 p {
+	padding-right: 28px;
+}
+
+.dcFeaturedForum .dcCol2 h2,
+.dcFeaturedForum .dcCol3 h2 {
+	text-align: center !important;
+}
+
+.dcFeaturedForum .dcCol3 h2 {
+	padding-right: 4px;
+}
+
+.dcFeaturedForum td {
+	padding-top: 14px;
+}
+
+.dcFeaturedForum tr.dcFirstChild td{
+	padding-top: 0;
+}
+
+
+
+.dcPopularForum.dcBricklet .dcContent {
+	padding-bottom: 4px;
+	margin-bottom: 0;
+	
+	padding-top: 4px;
+	margin-top: 0;
+}
+
+.dcPopularForum td {
+	padding-top: 12px;
+}
+
+.dcPopularForum .dcShareIcon {
+	float: right;
+}
+
+.dcPopularForum .dcForumCount {
+	float: right;
+}
+
+.dcPopularForum .dcCol1 {
+	padding-top: 16px;
+	padding-right: 10px;
+}
+
+.dcPopularForum .dcCol2 p {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+.dcPageClass_photo,
+.dcPhotoDetail {
+	text-align: left;
+}
+
+.dcPageClass_photo ul,
+.dcPageClass_photo li,
+.dcPageClass_photo dl,
+.dcPageClass_photo dt,
+.dcPageClass_photo dd {
+	display: inline;
+	list-style: none;
+}
+
+.dcPageClass_photo dt {
+	font-weight: bold;
+}
+
+
+
+
+.dcPageClass_photo .dcCaption {
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+
+.dcPageClass_photo .dcContent h3 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #2E2E2E;
+	
+	margin-top: 34px;
+}
+
+.dcPageClass_photo .dcCaption h2 {
+	font-size: 14px;
+	font-weight: bold;
+	display: inline;
+}
+
+.dcPageClass_photo .dcCaption p {
+	margin-top: 6px;
+}
+
+.dcPageClass_photo .dcCaption img {
+	float: right;
+}
+
+.dcPageClass_photo .dcIconButton {
+	padding-left: 6px;
+}
+
+
+
+
+
+
+
+.dcPageClass_photo .dcHorizMediaScroller div#wn	{
+	position:relative;
+	width:507px;
+	height:70px;
+	overflow:hidden;
+}
+
+.dcPageClass_slideshow .dcHorizMediaScroller div#wn	{
+	position:relative;
+	width:722px;
+	height:70px;
+	overflow:hidden;
+}
+
+
+
+
+
+
+
+.dcPageClass_slideshow .dcCaption dt {
+	margin-right: 6px;
+} 
+
+.dcPageClass_slideshow .dcCaption dd {
+	margin-left: 0;
+	padding-left: 0;
+	
+	margin-right: 50px;
+	padding-right: 0;
+}
+
+
+.dcPageClass_slideshow .dcCaption .dcPhotoDetail {
+	font-size: 12px;
+}
+
+.dcPageClass_slideshow .dcCaption .dcPhotoDetail dt {
+	margin-right: 1px;
+}
+
+.dcPageClass_slideshow .dcCaption .dcPhotoDetail dd {
+	margin-right: 11px;
+}
+
+.dcPageClass_slideshow .dcCaption .dcPhotoDetail dd.dcLastChild {
+	margin-right: 0;
+}
+
+
+.dcPageClass_slideshow .dcCaption ul,
+.dcPageClass_slideshow .dcCaption li {
+	text-align: left;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.dcPageClass_slideshow .dcCaption .dcIconButton {
+	padding-left: 6px;
+}
+
+.dcPageClass_slideshow .dcPictureContent .dcPictureFrame {
+	margin-bottom: 10px;
+}
+
+
+
+
+.dcPageClass_slideshow .dcPictureFrame {
+	position: relative;
+}
+
+.dcPageClass_slideshow .dcPictureFrame .dcSlideNavTop {
+	position: absolute;
+	top: 18px;
+	left: 296px;
+}
+
+.dcPageClass_slideshow .dcPictureFrame .dcSlideNav {
+	position: absolute;
+	bottom: 12px;
+	left: 175px;
+}
+
+.dcPageClass_slideshow .dcPictureFrame .dcSlideNav .dcIconButton {
+	position: relative;
+	bottom: 8px;	
+}
+
+.dcPageClass_slideshow .dcPictureFrame .dcSlideNav img.dcLastChild,
+.dcPageClass_slideshow .dcPictureFrame .dcSlideNav img {
+	padding-left: 8px;
+}
+
+.dcPageClass_slideshow .dcPictureFrame .dcSlideNav .dcIconButton {
+	padding-left: 0;
+}
+
+
+
+
+
+
+.dcBlogEntry {
+	margin-bottom: 26px;
+}
+
+.dcBlogEntry.dcLastChild {
+	margin-bottom: 8px;
+}
+
+
+.dcBlogEntryHeader h2 {
+	font-size: 14px;
+	margin-bottom: 6px;
+	padding-top: 16px;
+	margin-top: 12px !important;
+}
+
+.dcBlogEntryHeader .dcBlogMeta {
+	float: right;
+}
+
+.dcBlogEntry p.dcLastChild {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.dcBlogEntry .dcComments {
+	margin-top: 6px;
+}
+
+.dcBlogEntry .dcComments a {
+	margin-right: 6px;
+}
+
+
+.dcPageClass_blog .dcBlogNav {
+	float: right;
+}
+
+.dcPageClass_blog .dcContent ul,
+.dcPageClass_blog .dcContent li {
+	display: inline;
+}
+
+.dcPageClass_blog .dcContent li {
+	margin-left: 4px;
+	font-size: 13px;
+}
+
+.dcPageClass_blog .dcQuickLinksCallout dl,
+.dcPageClass_blog .dcQuickLinksCallout dt,
+.dcPageClass_blog .dcQuickLinksCallout dd  {
+
+	display:inline;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+
+}
+
+.dcPageClass_blog .dcQuickLinksCallout dt {
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+.dcPageClass_event {
+	/* empty */
+}
+
+.dcPageClass_event .dcRegCenterRight {
+	text-align: left;
+	padding-left: 24px;
+	padding-right: 0;
+}
+
+.dcPageClass_event h3.dcFirstChild {
+	margin-top: 0;
+}
+
+.dcPageClass_phase2 .dcHorizMediaScroller div#wn {
+	position:relative;
+	width:505px;
+	height:70px;
+	overflow:hidden;
+}
+
+
+.dcPageClass_event table.dcEventList {
+	background-color: white;
+	
+	border-color: #D5CCBE;
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	
+	border-collapse: collapse;
+}
+
+.dcPageClass_event .dcEventList th {
+	font-size: 13px;
+	font-weight: bold;
+	color: #626161;
+	
+	border-color: #D5CCBE;
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	
+	border-collapse: collapse;
+}
+
+.dcPageClass_event .dcEventList tr.dcPaginator {
+	float: none;
+}
+
+.dcPageClass_event .dcEventList tr.dcPaginator td {
+	border-color: #D5CCBE;
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	text-align: left;
+}
+
+.dcPageClass_event div.dcPaginator {
+	float: left;
+	padding-left: 12px;
+}
+
+.dcPageClass_event .dcResultsMeta {
+	float: left;
+}
+
+.dcPageClass_event tr.dcPaginator td {
+	width: 100%;
+}
+
+.dcPageClass_event .dcEventList th a {
+	color: #626161;
+}
+
+.dcPageClass_event .dcEventList th img {
+	padding-left: 2px;
+}
+
+.dcPageClass_event .dcEventList th img.dcIconUnsort {
+	margin-bottom: 1px;
+}
+
+.dcPageClass_event .dcEventList td {
+	color: #626161;
+}
+
+.dcPageClass_event .dcEventList td {
+	padding: 4px 8px 4px 8px;
+}
+
+.dcPageClass_event .dcEventList tr.dcRowOdd td {
+	background-color: #F7F7F7;
+}
+
+.dcPageClass_event .dcEventList tr.dcSelected td{
+	background-color: #A7D8EE !important;
+}
+
+.dcPageClass_event .dcEventList th div {
+	padding-left: 8px;
+	padding-bottom: 4px;
+	padding-top: 5px;
+}
+
+
+.dcPageClass_event .dcEventList th div {
+	margin: 1px;
+	background-image: url(../img/mydc/bricklet_bar_bg.gif);
+	background-repeat: repeat-x;
+	
+}
+
+
+
+
+
+.dcPageClass_event .dcPictureFrame {
+	position: relative;
+}
+
+.dcPageClass_event .dcPictureFrame .dcSlideNavTop {
+	position: absolute;
+	top: 18px;
+	left: 170px;
+}
+
+.dcPageClass_event .dcPictureFrame .dcSlideNav {
+	position: absolute;
+	bottom: 12px;
+	left: 46px;
+}
+
+.dcPageClass_event .dcPictureFrame .dcSlideNav .dcIconButton {
+	position: relative;
+	bottom: 8px;	
+}
+
+.dcPageClass_event .dcPictureFrame .dcSlideNav img.dcLastChild,
+.dcPageClass_event .dcPictureFrame .dcSlideNav img {
+	padding-left: 8px;
+}
+
+.dcPageClass_event .dcPictureFrame .dcSlideNav .dcIconButton {
+	padding-left: 0;
+}
+
+
+
+
+
+.dcFeaturedEvent .dcPhoto {
+	float: left;
+	margin-right: 10px;
+	padding-top: 4px;
+}
+
+.dcFeaturedEvent .dcPhoto p {
+	font-size: 12px;
+}
+
+.dcFeaturedEvent .dcActionList {
+	float: right;	
+}
+
+.dcFeaturedEvent .dcHorizRule {
+	position: relative;
+	right: -124px;
+	width: 543px;
+}
+
+
+
+
+
+
+.dcCalendar {
+	
+	width: 223px;
+	
+	margin-top: 5px;
+	
+	border-width: 0 1px 0 1px;
+	border-style: solid;
+	border-color: #B4B4B4;
+	
+	padding-top: 2px;
+	padding-bottom: 2px;
+	
+	background-image: url(../img/nondcps/calendar_bg_gradation.gif);
+	background-position: bottom;
+	background-color: white;
+}
+
+.dcCalendar .dcTopCap {
+	position: relative;
+	top: -7px;
+}
+
+.dcCalendar .dcTopCap {
+	*top: -14px;
+}
+
+.dcCalendar .dcBottomCap {
+	position: relative;
+	bottom: -7px;
+}
+
+
+.dcCalendar table.dcMatrix {
+	width: 100%;
+}
+
+
+.dcCalendar table.dcMatrix td {
+	
+}
+
+.dcCalendar table.dcMatrix .dcCol1,
+.dcCalendar table.dcMatrix .dcCol2,
+.dcCalendar table.dcMatrix .dcCol8,
+.dcCalendar table.dcMatrix .dcCol9 {
+	background-color: none !important;
+}
+
+.dcCalendar table.dcMatrix .dcCol3,
+.dcCalendar table.dcMatrix .dcCol4,
+.dcCalendar table.dcMatrix .dcCol5,
+.dcCalendar table.dcMatrix .dcCol6,
+.dcCalendar table.dcMatrix .dcCol7 {
+	background-color: white !important;
+}
+
+.dcCalendar table.dcMatrix thead th {
+	background-color: #F6F7FB !important;
+	background-image: none !important;
+	font-weight: normal;
+}
+
+
+.dcCalendar .dcMonth {
+	margin-right: 4px;
+}
+
+.dcCalendar .dcMonth,
+.dcCalendar .dcYear {
+	font-size: 16px;
+}
+
+.dcCalendar .dcMatrix {
+	font-size: 12px;
+	margin-top: 8px;
+	margin-bottom: 10px;
+}
+
+.dcCalendar .dcCalendarSearch {
+	text-align: left;
+	margin-left: 12px;
+}
+
+.dcCalendar .dcCalendarSearch,
+.dcCalendar .dcCalendarSearch input,
+.dcCalendar .dcActionList {
+	font-size: 10px;
+}
+
+.dcCalendar .dcCalendarSearch span {
+	font-size: 11px;
+}
+
+.dcCalendar .dcSearchType {
+	font-size: 12px;
+	width: 120px;
+	padding-bottom: 2px;
+	margin-bottom: 6px;
+}
+
+.dcCalendar .dcCalendarSearch input {
+	width: 72px;
+	padding-top: 3px;
+	padding-bottom: 3px;	
+}
+
+.dcCalendar .dcIconButton {
+	vertical-align: bottom;
+	padding-left: 3px;
+}
+
+.dcCalendar .dcActionList {
+	margin-top: 4px;
+}
+
+.dcCalendar .dcActionList a {
+	margin-right: 10px;
+}
+
+.dcCalendar .dcMatrix tr.dcSelected td {
+	background-color: #A7D8EE;
+}
+
+.dcCalendar .dcMatrix tr.dcSelected td.dcEmpty {
+	background-color: transparent !important;
+}
+
+.dcCalendar .dcMatrix tr td.dcSelected {
+	background-color: #5F9B2E;
+} 
+
+.dcCalendar td.dcPrevMonth,
+.dcCalendar td.dcNextMonth {
+	color: #5F7F7F;
+}
+
+
+.dcBoxRoundGradient {
+	background-image: url(../img/dcps/gradient_vert_blubrick_sub.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+	
+	background-color: #779FD3;
+	
+	position: relative;
+	
+	width: 316px;
+}
+
+.dcBoxRoundGradient .dcContent {
+	padding: 12px 12px 15px 14px;
+	
+	color: white;
+}
+
+.dcBoxRoundGradient .dcContent *,
+.dcBoxRoundGradient .dcContent h3 {	
+	color: white;
+}
+
+.dcBoxRoundGradient h2 {
+	font-size: 16px;
+	font-weight: normal;
+	border-bottom: 1px solid #9192AF;
+	
+	color: white;
+	
+	width: 100%;
+}
+
+.dcBoxRoundGradient .dcContent h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.dcBoxRoundGradient .dcContent p {
+	margin-bottom: 10px;
+}
+
+.dcBoxRoundGradient .dcContent .dcMessage { 
+	position: absolute;
+	font-size: 10px !important;
+	top: 12px;
+	right: 0;
+	padding-right: 12px;
+}
+
+.dcBoxRoundGradient .dcContent .dcMessage .dcBar .dcLinks li {
+	font-size: 10px !important;
+	margin-left: 1px;
+	vertical-align: bottom;	
+}
+
+
+
+
+
+
+.dcBoxRoundGradient .dcRound_tl {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.dcBoxRoundGradient .dcRound_tr {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.dcBoxRoundGradient .dcRound_bl {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.dcBoxRoundGradient .dcRound_br {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+
+.dcFooter {
+	/*font-family:Arial,Helvetica,sans-serif;*/
+	font-size:11px;
+	text-align: center;
+	margin-bottom: 24px;
+	margin-top: 40px;
+}
+
+.dcLanguageBar .dcImg {
+	position: relative;
+	top: -3px;
+}
+
+.dcFooterLabel {
+	color: #7B7B7B;
+	font-weight: bold;
+}
+
+.dcFooter ul {
+	display: inline;
+}
+
+.dcFooter li {
+	display: inline;	
+}
+
+.dcFooter li.dcDivider {	
+	color: #959595;
+	padding: 0 .6em 0 .6em;	
+}
+
+.dcFooter .dcLanguageBar li.dcImg a:hover {
+	border-bottom: 1px solid #0157B0;
+}
+
+.dcFooter .dcLanguageBar li.dcImg a img {
+	positon:relative;
+	top: -4px;
+	vertical-align: bottom;
+}
+
+.dcFooter .dcBar {
+	margin: 8px 0 8px 0;
+	padding: 8px 0 16px 0;
+	
+	border-width: 1px 0 0 0;
+	border-color: #CDCCCA;
+	border-style: solid;
+}
+
+.dcFooter .dcLinks {
+	margin-right: 75px;
+}
+
+
+
+
+
+
+.dcPopup {
+	border: 5px solid #838383 !important;
+	padding: 12px !important;
+	
+	position: absolute;
+	top: 0;
+	right: 0;
+	
+	background-color: #EEEEEE !important;
+	
+	z-index: 5 !important;
+}
+
+.dcPopup .dcCloseButton {
+	position: absolute;
+	top: 5px; 
+	right: 5px;
+}
+
+.dcPopup h5 {
+	font-size: 12px !important;
+	font-weight: bold !important;
+	color: #2E2E2E !important;
+}
+
+.dcPopup p {
+	font-size: 12px !important;
+	font-weight: normal !important;
+}
+
+.dcPopup a {
+	color: #0157B0 !important;
+}
+
+.dcPopup .dcMore {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+}

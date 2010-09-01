@@ -1,0 +1,93 @@
+/* Start Rounded Corner Callout */
+.ofCallout.ofRounded li {
+	background-position: 0 6px; 
+	padding-left: 11px;
+}
+
+.ofCallout.ofRounded .ofLeftSide {
+	background: transparent none repeat-y left top; 
+	clear: both;
+}
+
+.ofCallout.ofRounded .ofTop {
+	background: transparent none repeat-x left top;
+}
+
+.ofCallout.ofRounded .ofTop .ofLeft {
+	background: transparent none no-repeat left top; 
+	float:left;
+}
+
+.ofCallout.ofRounded .ofTop .ofRight {
+	background: transparent none no-repeat right top; 
+	float:right;
+}
+
+.ofCallout.ofRounded .ofBottom {
+	background: transparent none repeat-x bottom left;
+}
+
+.ofCallout.ofRounded .ofBottom .ofLeft {
+	background: transparent none no-repeat left bottom; 
+	float:left;
+}
+
+.ofCallout.ofRounded .ofBottom .ofRight {
+	background: transparent none no-repeat right bottom; 
+	float:right;
+}
+.ofCallout.ofRounded .ofWrapper {
+	background: transparent none repeat-y right top; 
+	border: none !important; 
+	position: relative;
+}
+
+.ofCallout.ofRounded {
+	background-color: #f4f4f4;
+}
+
+
+.ofCallout.ofRounded.ofNoDropShadow {
+	background-color: #fff;
+}
+
+.ofCallout.ofRounded.ofNoDropShadow .ofLeftSide {
+	background-image: url(../img/tab/pixel.gif);
+}
+
+.ofCallout.ofRounded.ofNoDropShadow .ofTop .ofLeft {
+	background-image: url(../img/tab/rc_topleft.gif); 
+	height: 12px; 
+	width: 12px;
+}
+
+.ofCallout.ofRounded.ofNoDropShadow .ofTop .ofRight {
+	background-image: url(../img/tab/rc_toprt.gif); 
+	height: 12px; 
+	width: 12px;
+}
+
+.ofCallout.ofRounded.ofNoDropShadow .ofBottom {
+	background-image: url(../img/tab/pixel.gif); 
+	height: 12px;
+}
+
+.ofCallout.ofRounded.ofNoDropShadow .ofBottom .ofLeft {
+	background-image: url(../img/tab/rc_llft.jpg); 
+	height: 12px; 
+	width: 12px;
+}
+
+.ofCallout.ofRounded.ofNoDropShadow .ofBottom .ofRight {
+	background-image: url(../img/tab/rc_lrt.jpg); 
+	height: 12px; 
+	width: 12px;
+}
+
+.ofCallout.ofRounded.ofNoDropShadow .ofWrapper {
+	background-image: url(../img/tab/pixel.gif); 
+	padding-top: 1px !important; 
+	padding-bottom: 4px;
+}
+
+/* End Rounded Corner Callouts */

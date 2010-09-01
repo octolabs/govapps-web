@@ -1,0 +1,37 @@
+.ofTabHeadRight,
+.ofTabHeadRight a {
+	color: #2E2E2E !important;
+	font-size: 12px;
+}
+
+.ofTabRounded li {
+	height: 22px;
+	margin: -2px;
+}
+
+.ofTabRounded .ofTabHead {
+	/* empty */
+}
+
+.ofTabRounded .ofTabHeadRight {
+	height: 13px;
+}
+
+.ofTopCap {
+	/* empty */
+}
+
+.ofTabRounded li.ofTabli.ofSelected .ofTabHead {
+	z-index: 50 !important;
+	height: 10px;
+	position: relative;
+	top: 4px;
+}
+
+.ofTabContent {
+	width: 100%;
+}
+
+.ofTabContent .ofWrapper {
+	width: 100%;
+}

@@ -1,0 +1,66 @@
+.TabbedPanels td {
+	padding: 0 2px 0 4px !important;
+}
+
+
+
+
+
+.grey_content{
+	color: #2E2E2E;
+	font-size: 14px;
+}
+.section_header {
+	color: #2E2E2E;
+	font-size: 19px;
+	font-weight: bold;	
+}
+.linkedtext a:link {font-weight: none; color: #2B4885; text-decoration: none;}
+.linkedtext a:visited {font-weight: none; color: #2B4885; text-decoration: none;}
+.linkedtext a:hover {font-weight: none; color: #2B4885; text-decoration: none;}
+.linkedtext {color: #2B4885; text-decoration: none; }	
+	
+.learn_more  a:link {color: #0157B0; text-decoration: none; }
+.learn_more  a:visited {color: #0157B0; text-decoration: none; }
+.learn_more  a:hover {color: #0157B0; text-decoration: none; }
+.learn_more  a:active{color: #0157B0; text-decoration: none; }
+.learn_more {color: #0157B0; text-decoration: none; }
+
+.darkbluegradient_bck {
+	background-image: url(img/darkblue_gradient.jpg);
+	background-repeat: repeat-x;
+}
+.lightblue_gradientbck {
+	background-image: url(img/lightblue_gradientbck.jpg);
+	background-repeat: repeat-x;
+}
+
+.smallheader {
+	color: #2E2E2E;
+	font-weight: bold;
+}
+.smallheaderblue {
+	color: #3E5EA3;
+	font-weight: bold;	
+}
+
+.lightbluegray_gradientbck {
+	background-image: url(accordian_icons/lightbluegray_gradientbck.jpg);
+	background-repeat: repeat-x;
+}
+.profilename {
+	color: #32549D;
+	font-size: 14px;
+	font-weight: bold;
+}
+.italicstext {
+	color: #2E2E2E;
+	font-size: 19px;
+	font-style: italic;
+}
+.redtexttitle {
+	color: #DA1C39;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}

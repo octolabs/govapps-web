@@ -1,0 +1,124 @@
+
+.dcPageClass_myDc .dcBrickletContainer {
+	padding-right: 14px;
+	padding-top: 14px;
+}
+
+.dcPageClass_myDc .dcBrickletContainer.dcLastChild {
+	padding-right: 0;
+	text-align: right;
+}
+
+
+.dcBrickletHeight_medium .dcBricklet .dcContent {
+	height: 110px;
+}
+
+.dcBrickletHeight_tall .dcBricklet .dcContent {
+	height: 134px;
+}
+
+.dcBrickletHeight_tall .dcBricklet .dcContent_special {
+	height: 148px;
+}
+
+.dcBrickletWidth_medium .dcBricklet {
+	width: 313px;
+}
+
+.dcBrickletWidth_wide .dcBricklet {
+	width: 476px;
+}
+
+.dcBricklet .dcTitleBar {
+	background-color: white;
+	
+	border-color: #D5CCBE;
+	border-width: 1px 1px 0 1px;
+	border-style: solid;
+	
+	padding: 1px;
+	height: 27px;
+}
+
+.dcBricklet .dcTitleBar h2 {
+	font-size: 13px;
+	font-weight: bold;
+	color: #626161;
+	margin-bottom: 0;
+	
+	padding-top: 5px;
+	padding-left: 11px;
+	
+	text-align: left;
+}
+
+.dcBricklet .dcTitleBar .dcWrapper {
+	background-image: url(../img/mydc/bricklet_bar_bg.gif);
+	background-repeat: repeat-x;
+	height: 27px;
+}
+
+.dcMoveBricklet {
+	float: right;
+	padding-top: 9px;
+	padding-right: 8px;
+	
+	background-image: url(../img/mydc/bricklet_bar_bg.gif);
+	background-repeat: repeat-x;
+}
+
+.dcMoveBricklet {
+	*padding-top: 7px; /* IE hack */
+	*height: 20px; /* IE hack */
+}
+
+.dcCloseBricklet {
+	float: right;
+	padding-top: 7px;
+	padding-right: 6px;
+	
+	background-image: url(../img/mydc/bricklet_bar_bg.gif);
+	background-repeat: repeat-x;
+	height: 20px;
+}
+
+.dcBricklet .dcContent {
+	background-image: url(../img/mydc/bricklet_bg.gif);
+	background-repeat: repeat-x;
+	background-position: bottom left;
+	
+	border-color: #D5CCBE;
+	border-width: 1px;
+	border-style: solid;
+	
+	padding: 14px 12px 14px 12px;
+	
+	vertical-align: top;
+	
+	position: static; /*octo 1.0*/
+	
+	text-align: left;
+}
+
+.dcBricklet .dcContent h3 {
+	margin-top: 0;
+	padding-top: 0;
+	
+	font-size: 13px;
+	font-weight: bold;
+	color: #2E2E2E;
+}
+
+.dcBricklet .dcContent .dcDate {
+	float: right;
+	font-size: 12px;
+	color: #707070;
+}
+
+.dcBricklet .dcMoreList {
+	font-size: 11px;
+	position: absolute;
+	bottom: 14px;
+	right: 14px;
+}

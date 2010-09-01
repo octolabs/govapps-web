@@ -1,0 +1,135 @@
+.dcMediaContent .dcRegMain {
+	padding-right: 0 !important;
+}
+
+.dcMediaContent .dcRegRight {
+	/*padding-left: 24px;
+	padding-right: 0;*/
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.dcMediaContent .dcRegMain {
+	padding-top: 4px;
+	text-align: left;
+}
+
+.dcMediaContent .dcTitle td {
+	text-align: left;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	height: 30px;
+}
+
+.dcMediaContent .dcColPlayer {
+	width: 444px;
+}
+
+.dcMediaContent .dcColCallout {
+	padding-left: 14px;
+	margin-right: 12px;
+	padding-right: 12px;
+}
+
+.dcMediaContent .dcMediaScroller {
+	font-size: 11px;
+}
+
+.dcMediaContent .dcMediaPlayerBg { 
+	background-image:url(../img/moviescenes_bck.jpg);
+	background-repeat:repeat-x;
+}
+
+.dcMediaPlayerBg h2 {
+	color: #FFFFFF;
+	margin-top: 24px;
+	margin-bottom: 4px;
+}
+
+.dcMediaPlayerBg ul {
+
+	margin-left: 24px;
+	margin-bottom: 4px;
+}
+
+.dcMediaPlayerBg h2.dcFirstChild {
+	margin-top: 12px;
+	margin-bottom: 12px;
+	margin-left: 8px;
+	padding-right: 12px;
+}
+
+.dcMediaContent .dcCallout {
+	text-align: left;
+	display: block;
+	margin-top: 9px;
+	margin-bottom: 18px;
+	margin-right: 12px;
+	
+	padding-bottom: 18px;
+	
+	border-color: #828A93;
+	border-width: 0 0 1px 0;
+	border-style: solid;
+}
+
+.dcMediaContent .dcCallout.dcLastChild {
+	border: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.dcMediaContent .dcColCallout h2,
+.dcMediaContent .dcColCallout h2.firstChild {
+	margin-left: 0;
+}
+
+.dcMediaContent .dcCallout h3 {
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+
+.dcMediaContent .dcCallout p {
+	font-size: 13px;
+}
+
+.dcMediaContent .dcIcon {
+	float: left;
+	padding-right: 12px;
+}
+
+.dcMediaContent .dcMediaPlayerBg h2.dcInverse {
+	color: #5B6F87;
+}
+
+.dcMediaContent .dcMediaPlayerBg .dcContent h2.dcFirstChild {
+	margin-left: 0;
+	margin-bottom: 4px;
+}
+
+.dcMediaContent .dcContent td {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.dcMediaContent .dcContent h2 {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.dcMediaContent .dcContent p {
+	padding-right: 20px;
+}
+
+.dcMediaPlayer {
+	margin-left: -1px;
+	padding-left: 0;
+}
+
+
+
+	
+
+
+

@@ -1,0 +1,142 @@
+.dcMasthead {
+	width: 100%;
+}
+
+.dcLogo {
+	margin-left: 17px;
+	margin-right: 44px;
+	margin-top: 41px;
+	width: 150px;
+}
+
+.dcSearchBar {
+	margin-right: 0;
+	margin-top: 56px;
+	vertical-align: top;
+	text-align: left;
+	padding-left: 25px;
+}
+
+.dcSearchBar fieldset {
+	vertical-align: top;
+}
+
+.dcSearchForm {
+	background-repeat: no-repeat;
+	background-image: url(../img/gsearchbar.jpg);
+	background-position: top left;
+	width:335px; 
+	height:28px; 
+	border:0;
+	margin-left: 2px;
+	margin-top: 0px;
+	margin-bottom: 0;
+	
+	padding-left: 10px;
+	padding-top: 5px;
+	font-size: 16px;
+}
+
+.dcSearchForm,
+.dcSearchButton {
+	position: relative;
+	top: 1px; /* to close/remove 1px white space between this and mirror img in IE(7) */
+	margin-bottom: 0;
+}
+
+.dcSearchFilter {
+	background:url(../img/gsearch_mirror.jpg) no-repeat;
+	background-position:  2px 0px;
+}
+
+.dcSearchButton {
+	margin-top: 0px;
+	margin-left: -4px;
+}
+
+.dcSearchButton {
+	*margin-top: 1px; /* target IE6+IE7 */
+}
+
+.dcActionBar {
+	margin-top: 22px;			
+	height: 30px;
+	
+	font-size: 11px;
+	color: #2E2E2E;	
+	
+	vertical-align: top;
+}
+
+.dcActionBar .dcLeftCorner {
+	background-image: url(../img/regBoxLeft.gif);
+	background-repeat: no-repeat;
+	width: 8px;
+	height: 30px;
+	float: left;
+}
+
+.dcActionBar .dcRightCorner {
+	background-image: url(../img/regBoxRight.gif);
+	background-repeat: no-repeat;
+	width: 8px;
+	height: 30px;
+	float: right;
+}
+
+.dcActionBar a {
+	color: #0157B0;
+	text-decoration: none;
+}
+
+.dcActionBar ul {
+	background-color: #E2E2E2;
+	height: 100%;
+	text-align: center;
+	
+	vertical-align: top;
+}
+
+.dcActionBar li {
+	display: inline;
+	position: relative;
+	top: .75em;
+	height: 30px;
+	padding: 2px;
+	
+	position: relative;
+	top: 5px;
+
+	vertical-align: top;
+}
+
+.dcActionBar li {
+	*top: 7px; /* IE hack */
+}
+
+.dcActionBar li.dcFirstChild {
+	/* empty */
+}
+
+.dcMasthead .dcMessage {
+	text-align: right;
+	margin-bottom: 8px;
+}
+
+.dcMasthead .dcMessage .dcAlert {
+	padding-left: 6px;
+}
+
+.dcMasthead .dcMessage .dcAlert em {
+	font-style: normal;
+	color: red;
+}
+
+.dcMasthead .dcMessage .dcAlert a {
+	color: red;
+}
+
+.dcMasthead .dcMessage .dcAlert a:hover {
+	text-decoration: underline;
+}
+

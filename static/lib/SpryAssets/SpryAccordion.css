@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+/* SpryAccordion.css - Revision: Spry Preview Release 1.4 */
+
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+
+/* This is the selector for the main Accordion container. For our default style,
+ * we draw borders on the left, right, and bottom. The top border of the Accordion
+ * will be rendered by the first AccordionPanelTab which never moves.
+ *
+ * If you want to constrain the width of the Accordion widget, set a width on
+ * the Accordion container. By default, our accordion expands horizontally to fill
+ * up available space.
+ *
+ * The name of the class ("Accordion") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style the
+ * Accordion container.
+ */
+.Accordion {
+	overflow: hidden;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #CDCCCA;
+	border-bottom-color: #CDCDCD;
+	border-left-color: #CDCCCA;
+	width: 221px;
+}
+
+/* This is the selector for the AccordionPanel container which houses the
+ * panel tab and a panel content area. It doesn't render visually, but we
+ * make sure that it has zero margin and padding.
+ *
+ * The name of the class ("AccordionPanel") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style an
+ * accordion panel container.
+*/
+.AccordionPanel {
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+/* This is the selector for the AccordionPanelTab. This container houses
+ * the title for the panel. This is also the container that the user clicks
+ * on to open a specific panel.
+ *
+ * The name of the class ("AccordionPanelTab") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style an
+ * accordion panel tab container.
+ */
+.AccordionPanelTab {
+	background-image: url(../accordian_icons/tab_bck.jpg);
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	padding: 0px;
+	border-top-width: 1px;
+	border-bottom-width: 0px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #CDCDCD;
+	border-bottom-color: #CDCDCD;
+	font-family: "Myriad Pro";
+	font-size: 16px;
+	line-height: 31px;
+	font-weight: normal;
+	color: #0157B0;
+	text-indent: 9px;
+	margin: 0px;
+	height: 33px;
+	width: 221px;
+}
+.AccordionPanelTab1 {
+	background-image: url(../accordian_icons/tab_bck.jpg);
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	padding: 0px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #ffffff;
+	border-bottom-color: #CDCDCD;
+	font-family: "Myriad Pro";
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: normal;
+	color: #0157B0;
+	text-indent: 9px;
+	margin: 0px;
+	height: 28px;
+	width: 221px;
+}
+
+/* This is the selector for a Panel's Content area. It's important to note that
+ * you should never put any padding on the panel's content area if you plan to
+ * use the Accordions panel animations. Placing a non-zero padding on the content
+ * area can cause the accordion to abruptly grow in height while the panels animate.
+ *
+ * Anyone who styles an Accordion *MUST* specify a height on the Accordion Panel
+ * Content container.
+ *
+ * The name of the class ("AccordionPanelContent") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style an
+ * accordion panel content container.
+ */
+.AccordionPanelContent {
+	overflow: auto;
+	margin: 0px;
+	padding: 0px;
+	height: 296px;
+	background-color: #FFFFFF;
+}
+
+/* This is an example of how to change the appearance of the panel tab that is
+ * currently open. The class "AccordionPanelOpen" is programatically added and removed
+ * from panels as the user clicks on the tabs within the Accordion.
+ */
+.AccordionPanelOpen .AccordionPanelTab {
+	background-image: url(../accordian_icons/tab_bck.jpg);
+		border-bottom-width: 1px;
+	border-bottom-color: #CDCDCD;
+}
+
+
+/* This is an example of how to change the appearance of the panel tab as the
+ * mouse hovers over it. The class "AccordionPanelTabHover" is programatically added
+ * and removed from panel tab containers as the mouse enters and exits the tab container.
+ */
+.AccordionPanelTabHover {
+	color: #000000;
+}
+.AccordionPanelOpen .AccordionPanelTabHover {
+	color: #000000;
+	
+}
+
+/* This is an example of how to change the appearance of all the panel tabs when the
+ * Accordion has focus. The "AccordionFocused" class is programatically added and removed
+ * whenever the Accordion gains or loses keyboard focus.
+ */
+.AccordionFocused .AccordionPanelTab {
+	background-image: url(../accordian_icons/tab_bck.jpg);
+border-bottom-width: 0px;
+	border-bottom-color: #ffffff;
+}
+.AccordionFocused .AccordionPanelTab1 {
+	background-image: url(../accordian_icons/tab_bck.jpg);
+border-bottom-width: 0px;
+	border-bottom-color: red;
+}
+
+
+/* This is an example of how to change the appearance of the panel tab that is
+ * currently open when the Accordion has focus.
+ */
+.AccordionFocused .AccordionPanelOpen .AccordionPanelTab1 {
+	background-image: url(../accordian_icons/tab_bck.jpg);
+	border-bottom-width: 1px;
+	border-bottom-color: #CDCDCD;
+}
+.AccordionFocused .AccordionPanelOpen .AccordionPanelTab {
+	background-image: url(../accordian_icons/tab_bck.jpg);
+	border-bottom-width: 1px;
+	border-bottom-color: #CDCDCD;
+	font-family: "Myriad Pro";
+	font-size: 16px;
+	line-height: 31px;
+	
+	color: #2e2e2e;
+	text-indent: 9px;
+
+}
+.AccordionFocused .AccordionPanelOpen .AccordionPanelTab1 {
+	background-image: url(../accordian_icons/tab_bck.jpg);
+	border-bottom-width: 1px;
+	border-bottom-color: #CDCDCD;
+	font-family: "Myriad Pro";
+	font-size: 16px;
+	line-height: 20px;
+	
+	color: #2e2e2e;
+	text-indent: 9px;
+
+}
+.AccordionBodyContentDarkGray {
+	font-family: "Myriad Pro";
+	font-size: 13px;
+	color: #2E2E2E;
+	line-height: normal;
+}
+.AccordionBodyContentLightGray {
+	font-family: "Myriad Pro";
+	font-size: 12px;
+	color: #959595;
+	line-height: normal;
+}
+.AccordionBodyContentLinks a:link  {
+	font-family: "Myriad Pro";
+	font-size: 12px;
+	color: #0157B0;
+	font-weight: normal;
+	text-decoration: none;
+}	
+.AccordionBodyContentLinks a:visited{
+	font-family: "Myriad Pro";
+	font-size: 12px;
+	color: #0157B0;
+	font-weight: normal;
+	text-decoration: none;
+}	
+.AccordionBodyContentLinks a:hover{
+	font-family: "Myriad Pro";
+	font-size: 12px;
+	color: #0157B0;
+	font-weight: normal;
+	text-decoration: underline;
+}	
+.AccordionBodyContentLinks {
+	font-family: "Myriad Pro";
+	font-size: 12px;
+	color: #0157B0;
+	font-weight: normal;
+	text-decoration: none;
+	
+}
+.AccordionBodyContentLinksArrows {
+	font-family: "Myriad Pro";
+	font-size: 15px;
+	color: #0157B0;
+	font-weight: normal;
+	line-height: 15px;
+}
+.sectionspacer {
+	background-image: url(../accordian_icons/grey_spacer.jpg);
+	height: 32px;
+	background-repeat: repeat;
+
+}
+
+.AccordionBodyViewAllLinks a:link {font-family: "Myriad Pro"; font-size: 13px; color: #0157B0; font-weight: normal; height: 32px; text-decoration: none; }
+.AccordionBodyViewAllLinks a:visited {font-family: "Myriad Pro"; font-size: 13px; color: #0157B0; font-weight: normal; height: 32px; text-decoration: none; }
+.AccordionBodyViewAllLinks a:hover {font-family: "Myriad Pro"; font-size: 13px; color: #0157B0; font-weight: normal; height: 32px; text-decoration: none; }
+.AccordionBodyViewAllLinks a:active{font-family: "Myriad Pro"; font-size: 13px; color: #0157B0; font-weight: normal; height: 32px; text-decoration: none; }
+.AccordionBodyViewAllLinks{font-family: "Myriad Pro"; font-size: 13px; color: #0157B0; font-weight: normal; height: 32px; text-decoration: none; }

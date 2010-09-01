@@ -1,0 +1,78 @@
+* {
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+	/*margin-left: 16px;*/
+	/*font: Arial, Helvetica, sans-serif;*/
+	font-size: 13px;
+	line-height: 19px;
+	color: #2E2E2;
+	background-color: white;
+}
+
+img {
+	border: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	
+	color: #0157B0;
+}
+
+a:visited {
+	color: #0157B0;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #0157B0;
+}
+
+td {
+	vertical-align: top;
+}
+
+h1 {
+	/*font-family: Tahoma, Arial;*/
+	font-size: 22px;
+	color: #2E2E2E;
+	font-weight: 200;
+	
+	margin-bottom: 16px;
+}
+
+h2 {
+	/*font-family: Tahoma, Arial;*/
+	font-size: 16px;
+	color: #2E2E2E;
+	font-weight: bold;
+	
+	margin-bottom: 12px;
+}
+
+p {
+	/*font-family: Tahoma, Arial;*/
+	font-size: 13px;
+	color: #2E2E2E;
+	margin-bottom: 8px !important;
+	padding-bottom: 8px !important;
+}
+
+.faqListing ul {
+	margin-left: 20px;
+	padding: 20px;
+}

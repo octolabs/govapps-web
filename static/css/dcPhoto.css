@@ -1,0 +1,160 @@
+
+
+.dcPageClass_photo,
+.dcPhotoDetail {
+	text-align: left;
+}
+
+.dcPageClass_photo ul,
+.dcPageClass_photo li,
+.dcPageClass_photo dl,
+.dcPageClass_photo dt,
+.dcPageClass_photo dd {
+	display: inline;
+	list-style: none;
+}
+
+.dcPageClass_photo dt {
+	font-weight: bold;
+}
+
+
+
+
+.dcPageClass_photo .dcCaption {
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+
+.dcPageClass_photo .dcContent h3 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #2E2E2E;
+	
+	margin-top: 34px;
+}
+
+.dcPageClass_photo .dcCaption h2 {
+	font-size: 14px;
+	font-weight: bold;
+	display: inline;
+}
+
+.dcPageClass_photo .dcCaption p {
+	margin-top: 6px;
+}
+
+.dcPageClass_photo .dcCaption img {
+	float: right;
+}
+
+.dcPageClass_photo .dcIconButton {
+	padding-left: 6px;
+}
+
+
+
+
+
+
+
+.dcPageClass_photo .dcHorizMediaScroller div#wn	{
+	position:relative;
+	width:507px;
+	height:70px;
+	overflow:hidden;
+}
+
+.dcPageClass_slideshow .dcHorizMediaScroller div#wn	{
+	position:relative;
+	width:722px;
+	height:70px;
+	overflow:hidden;
+}
+
+
+
+
+
+
+
+.dcPageClass_slideshow .dcCaption dt {
+	margin-right: 6px;
+} 
+
+.dcPageClass_slideshow .dcCaption dd {
+	margin-left: 0;
+	padding-left: 0;
+	
+	margin-right: 50px;
+	padding-right: 0;
+}
+
+
+.dcPageClass_slideshow .dcCaption .dcPhotoDetail {
+	font-size: 12px;
+}
+
+.dcPageClass_slideshow .dcCaption .dcPhotoDetail dt {
+	margin-right: 1px;
+}
+
+.dcPageClass_slideshow .dcCaption .dcPhotoDetail dd {
+	margin-right: 11px;
+}
+
+.dcPageClass_slideshow .dcCaption .dcPhotoDetail dd.dcLastChild {
+	margin-right: 0;
+}
+
+
+.dcPageClass_slideshow .dcCaption ul,
+.dcPageClass_slideshow .dcCaption li {
+	text-align: left;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.dcPageClass_slideshow .dcCaption .dcIconButton {
+	padding-left: 6px;
+}
+
+.dcPageClass_slideshow .dcPictureContent .dcPictureFrame {
+	margin-bottom: 10px;
+}
+
+
+
+
+.dcPageClass_slideshow .dcPictureFrame {
+	position: relative;
+}
+
+.dcPageClass_slideshow .dcPictureFrame .dcSlideNavTop {
+	position: absolute;
+	top: 18px;
+	left: 296px;
+}
+
+.dcPageClass_slideshow .dcPictureFrame .dcSlideNav {
+	position: absolute;
+	bottom: 12px;
+	left: 175px;
+}
+
+.dcPageClass_slideshow .dcPictureFrame .dcSlideNav .dcIconButton {
+	position: relative;
+	bottom: 8px;	
+}
+
+.dcPageClass_slideshow .dcPictureFrame .dcSlideNav img.dcLastChild,
+.dcPageClass_slideshow .dcPictureFrame .dcSlideNav img {
+	padding-left: 8px;
+}
+
+.dcPageClass_slideshow .dcPictureFrame .dcSlideNav .dcIconButton {
+	padding-left: 0;
+}
+
+
+

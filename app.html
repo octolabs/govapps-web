@@ -1,0 +1,490 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<title>DC App Store</title>
+	
+		<!-- link href="css/feedback.css" rel="stylesheet" type="text/css" / -->
+        <link href="static/css/Area_Res.css" rel="stylesheet" type="text/css" />
+        <link href="static/lib/SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
+        <link href="static/highlights/highlights_bar.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/dcNormalize.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/dcLayout.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/dcMasthead.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/dcTopNav.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/dcDepNav.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/dcSpryAccordion.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/dcTab.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/dcContent.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/dcPictureContent.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/dcMediaContent.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/dcHighlights.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/dcHorizMediaScroller.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/dcVideoGrid.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/dcInfoNav.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/dcForum.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/dcPhoto.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/dcBlog.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/dcEvent.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/dcCalendar.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/dcFooter.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/dcPopup.css" rel="stylesheet" type="text/css" />
+		<link href="static/css/dcBrick.css" rel="stylesheet" type="text/css" />
+				
+		<script src="static/lib/yui/utilities/utilities.js" type="text/javascript"></script>
+		<script src="static/js/SpryAccordion2.js" type="text/javascript"></script>
+        <script src="static/lib/SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+        <script src="static/js/dcInit.js" type="text/javascript"></script>
+        <script src="static/js/dcTopNav.js" type="text/javascript"></script>
+        <!-- script src="js/dcAccordion.js" type="text/javascript"></script -->
+        <script src="static/highlights/js/dw_event.js" type="text/javascript"></script>
+        <script src="static/highlights/js/dw_scroll.js" type="text/javascript"></script>
+        <script src="static/highlights/js/scroll_controls.js" type="text/javascript"></script>
+        <script src="static/js/dcHighlights.js" type="text/javascript"></script>
+        <script src="static/js/dcVideoGrid.js" type="text/javascript"></script>
+        <script src="static/js/dcInfoNav.js" type="text/javascript"></script>
+        <script src="static/js/dcPopup.js" type="text/javascript"></script>
+        <script src="static/js/dcDwGenerated.js" type="text/javascript"><!-- do not close --></script>
+        <script src="static/js/accessibleFont.js" type="text/javascript"></script><!-- For font resize -->
+        <script src="static/js/bookmark.js" type="text/javascript"></script><!-- For bookmark browser recognition -->
+        <script src="static/js/photoGallerySelector.js" type="text/javascript"></script><!-- For image rotator/navigator -->
+	    <script src="static/Scripts/AC_ActiveX.js" type="text/javascript"></script>
+        <script src="static/Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+
+
+ <!--// documentation resources //-->
+	<script src="static/vote/jquery.js" type="text/javascript"></script>
+	<script src="static/vote/documentation.js" type="text/javascript"></script>
+ <!--  link href="static/vote/documentation.css" type="text/css" rel="stylesheet"/>-->
+
+ <!--// plugin-specific resources //-->
+	<script src="static/vote/jquery.MetaData.js" type="text/javascript" language="javascript"></script>
+	<script src="static/vote/jquery.rating.js" type="text/javascript" language="javascript"></script>
+	<script src="static/vote/jquery.form.js" type="text/javascript" language="javascript"></script>
+	
+	<script type="text/javascript"> 
+	// prepare the form when the DOM is ready 
+	$(document).ready(function() { 
+	    var options = { 
+	        target:        '#output1',   // target element(s) to be updated with server response 
+	        beforeSubmit:  showRequest,  // pre-submit callback 
+	        success:       showResponse  // post-submit callback 
+
+	        // other available options: 
+	        //url:       url         // override for form's 'action' attribute 
+	        //type:      type        // 'get' or 'post', override for form's 'method' attribute 
+	        //dataType:  null        // 'xml', 'script', or 'json' (expected server response type) 
+	        //clearForm: true        // clear all form fields after successful submit 
+	        //resetForm: true        // reset the form after successful submit 
+
+	        // $.ajax options can be used here too, for example: 
+	        //timeout:   3000 
+	    }; 
+
+	    // bind form using 'ajaxForm' 
+	    $('#voting_form').ajaxForm(options); 
+	}); 
+
+	// pre-submit callback 
+	function showRequest(formData, jqForm, options) { 
+	    // formData is an array; here we use $.param to convert it to a string to display it 
+	    // but the form plugin does this for you automatically when it submits the data 
+	    var queryString = $.param(formData); 
+
+	    // jqForm is a jQuery object encapsulating the form element.  To access the 
+	    // DOM element for the form do this: 
+	    // var formElement = jqForm[0]; 
+
+	    //alert('About to submit: \n\n' + queryString); 
+
+	    // here we could return false to prevent the form from being submitted; 
+	    // returning anything other than false will allow the form submit to continue 
+	    return true; 
+	} 
+
+	// post-submit callback 
+	function showResponse(responseText, statusText)  { 
+	    // for normal html responses, the first argument to the success callback 
+	    // is the XMLHttpRequest object's responseText property 
+
+	    // if the ajaxForm method was passed an Options Object with the dataType 
+	    // property set to 'xml' then the first argument to the success callback 
+	    // is the XMLHttpRequest object's responseXML property 
+
+	    // if the ajaxForm method was passed an Options Object with the dataType 
+	    // property set to 'json' then the first argument to the success callback 
+	    // is the json data object returned by the server 
+
+	    //alert('status: ' + statusText + '\n\nresponseText: \n' + responseText + 
+	    //    '\n\nThe output div should have already been updated with the responseText.'); 
+	}
+
+	</script>
+	
+ <link href="static/vote/jquery.rating.css" type="text/css" rel="stylesheet"/>
+
+ <!-- Google Ajax Api
+ -->
+ <script src="http://www.google.com/jsapi?key=notsupplied-wizard"
+   type="text/javascript"></script>
+
+ <!-- Dynamic Feed Control and Stylesheet -->
+ <script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js"
+   type="text/javascript"></script>
+ <style type="text/css">
+   @import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
+ </style>
+
+ <script type="text/javascript">
+   function LoadDynamicFeedControl() {
+     var feeds = [
+	{title: 'Latest comments',
+	 url: 'http://appstore.dc.gov/vote/feed?appid={{ app.appid }}'
+	}];
+    var options = {
+      stacked : false,
+      horizontal : false,
+      title : "<h2 style='color: #619210' align='left'>&nbsp;Users' votes and comments</h2>"
+    }
+
+     new GFdynamicFeedControl(feeds, 'feed-control', options);
+   }
+   // Load the feeds API and set the onload callback.
+   google.load('feeds', '1');
+   google.setOnLoadCallback(LoadDynamicFeedControl);
+ </script>
+
+</head>
+	
+	<!-- 
+    	Color Theme Changes
+        dcSkin0 - Full White Theme
+        dcSkin1 - Gradient Grey Bg, Gradient Blue Nav
+        dcSkin2 - Gradient Grey LtBlue Bg, Gradient Grey LtBlue Nav
+        dcSkin3 - Gradient Yellow Bg, Gradient Green Nav
+        dcSkin4 - Short Gradient Lt Brown White Bg, Gradient Lt Brown White Nav
+    -->
+    <body class="dcSkin2 dcLayoutVertSaver dcPageClass_agencySite dcPageClass_agencySite_gdc dcPageClass_sub">
+
+	<div id="layout" align="center">	
+	
+		<div id="skip"><a href="#pcontent">Skip to Main Content</a></div>
+		
+		<div class="dcBody dcMediaContent">
+			
+			<div id="skip"><a href="#pcontent">Skip to Main Content</a></div>
+
+                <table class="dcLayout dcMasthead">
+                    <tr>
+                        <td width="25%">
+                            <div class="dcLogo">
+                
+                                <a href="jspGen_home.html" title="DC.gov Home"><img src="static/img/DCgovLOGO.gif" border="0" alt="DC.gov Home" align="top" onmouseover="DC.doImageOn(this)" onmouseout="DC.doImageOff(this)"/></a>
+                            </div>
+                        </td>
+                        <td width="75%">
+                            <div class="dcSearchBar">
+                                <form action="http://google.dc.gov/search" method="get" id="gs">					
+                                    <fieldset>
+                                    
+                                        <table cellspacing="0">
+                                            <tr>
+                
+                                                <td>
+                                                    <img class="dcSearchForm_leftCap" src="static/img/gsearchbar_left.jpg" alt=""/>
+                                                </td>
+                                                <td>
+                                                    <input name="q" type="text" class="dcSearchForm" value="" maxlength="" title="Search Term or Phrase" />
+                                                </td>
+                                                <td>
+                                                    <input type="image" class="dcSearchButton" title="Search" src="static/img/gsearchbar_button.jpg" alt="Search" align="top"/>
+                                                </td>
+                
+                                            </tr>
+                                        </table>
+                                    
+                                        <div class="site-filter dcSearchFilter"> 
+                                            <div class="inner_site-filter">
+                                                <input id="radio_all" class="filter-radio" type="radio" checked="checked" value="0" name="emb" onclick="embedRestrictClick('all')" title="DC.gov"/>
+                                                DC.gov&nbsp;&nbsp;&nbsp;
+                                                <!-- 
+                                                <input id="site_search" class="filter-radio" type="radio"  value="1" name="emb" onclick="embedRestrictClick('emb')" title="App Store"/>
+                                                App Store
+                                                 -->
+                                            </div>
+                                        </div>
+<input type="hidden" name="ud" value="1"> 
+                  <input type="hidden" name="sort" value="date:D:L:d1"> 
+                  <input type="hidden" name="output" value="xml_no_dtd"> 
+                  <input type="hidden" name="oe" value="UTF-8"><input type="hidden" name="ie" value="UTF-8"> 
+                  <input type="hidden" name="client" value="default_frontend"> 
+                  <input type="hidden" name="proxystylesheet" value="default_frontend"> 
+                  <input type="hidden" name="site" value="default_collection">   	
+                                    </fieldset>
+                                 </form>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="dcHeaderLinks">	
+                                <ul>
+                                    <li><a href="http://dc.gov/contact/index.shtm" title="Contact Us">Contact Us</a></li>
+                                    <li class="dcDivider">|</li>
+                                    <li><a href="http://dc.gov/agencies/index.asp" title="Agency Directory">Agency Directory</a></li>
+                                    <li class="dcDivider">|</li>
+                                    <li class="dcLastChild">Call 311</li>
+                                </ul>								
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+			
+                <div class="dcTopNav dcSkinBg">
+                    <ul>
+                        <li class="dcTopNav_item" onmouseover="DC.topNav.doImageOver(this)" onmouseout="DC.topNav.doImageOut(this)">
+                            <a href="http://311.dc.gov" title="Service Request Center"><img src="static/img/topnav/serviceRequestCenter.jpg" alt="Service Request Center" /></a>					
+                        </li>
+                        <!-- @note selected items must have a class name of "dcSelected" and the image must the "on" state image -->
+                        <li class="dcTopNav_item" onmouseover="DC.topNav.doImageOver(this)" onmouseout="DC.topNav.doImageOut(this)">
+                            <a href="http://rrc.dc.gov" title="Area Residents"><img src="static/img/topnav/areaResidents.jpg" alt="Area Residents" /></a>					
+                        </li>
+                        <li class="dcTopNav_item" onmouseover="DC.topNav.doImageOver(this)" onmouseout="DC.topNav.doImageOut(this)">
+                            <a href="http://brc.dc.gov" title="Business and Non-Profit"><img src="static/img/topnav/businessAndNp.jpg" alt="Business and Non-Profit" /></a>
+                        </li>
+                        <li class="dcTopNav_item" onmouseover="DC.topNav.doImageOver(this)" onmouseout="DC.topNav.doImageOut(this)">
+                            <a href="http://vrc.dc.gov" title="Visitors"><img src="static/img/topnav/visitors.jpg" alt="Visitors" /></a>
+                        </li>
+                        <li class="dcTopNav_item" onmouseover="DC.topNav.doImageOver(this)" onmouseout="DC.topNav.doImageOut(this)">
+                            <a href="http://dc.gov/mayor/news/index.asp" title="Media"><img src="static/img/topnav/media.jpg" alt="Media" /></a>
+                        </li>
+                        <li class="dcTopNav_item" onmouseover="DC.topNav.doImageOver(this)" onmouseout="DC.topNav.doImageOut(this)">
+                            <a href="http://grc.dc.gov" title="Government"><img src="static/img/topnav/govt.jpg" alt="Government" /></a>
+                        </li>
+                    </ul>
+                    
+                    <ul class="dcSubNav dcTopicPath">
+                        <li>
+                            <a href="http://dc.gov" title="DC HOME">DC HOME</a>
+                        </li>
+                        <li class="dcDivider">&gt;</li>
+                        <li>
+                            <a href="http://appstore.dc.gov" title="APP STORE HOME">APP STORE HOME</a>
+                        </li>	
+                        <li class="dcDivider">&gt;</li>
+                        <li>
+                            APPLICATION INFO
+                        </li>
+                    </ul>
+                </div>
+
+	
+
+
+		<div class="dcRegMain dcSkinBgImg">
+				
+
+				<table style="width:100%">
+					<tr class="dcTitle">
+
+						<td colspan="2">
+							<h1>{{app.name}}</h1>		
+						</td>
+					</tr>
+
+					<tr>
+						<td class="dcRegLeft dcContent">
+							<div class="dcCallout dcLastChild">
+    <table width="100%">
+      <tr>
+      <td width="74px">
+      <a href="{{app.url}}" border="0"><img src="/dynamic/image?appid={{ app.appid }}&type=icon"/></a>
+      </td>
+      <td align="left">
+         {{app.summary}}
+		</td>			
+	  </tr>						
+    </table>  
+						
+							</div>
+							<div class="dcHorizLineDot">&nbsp;</div>
+							<h2 style="color: #619210">Category</h2>
+							<div class="dcContentAndList">
+								{{app.category}}
+							</div>
+							
+							<div class="dcHorizLineDot">&nbsp;</div>
+							<h2 style="color: #619210">Tags</h2>
+							<div class="dcContentAndList">
+								{{app.tags}}
+							</div>
+
+							<div class="dcHorizLineDot">&nbsp;</div>
+							<h2 style="color: #619210">Your Feedback</h2>
+							<div class="dcContentAndList">
+
+<form id="voting_form" action="vote" method="GET">
+<input type="hidden" name="appid" value="{{app.appid}}">
+<table>
+	<tr>
+		<td>Rating</td>
+		<td>
+<input name="stars" type="radio" class="star" value="1"/>
+<input name="stars" type="radio" class="star" value="2"/>
+<input name="stars" type="radio" class="star" value="3"/>
+<input name="stars" type="radio" class="star" value="4"/>
+<input name="stars" type="radio" class="star" value="5"/>
+		</td>
+	</tr>
+	<tr>
+		<td>Your name</td>
+		<td><input type="text" name="username"></td>
+	</tr>
+	<tr>
+		<td>Comments</td>
+		<td><textarea name="comment" rows="7"></textarea></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="submit" value="Submit Comment" /></td>
+	</tr>
+</table>
+</form>
+
+<div id=output1></div>
+
+							</div>
+
+							<div class="dcHorizLineDot">&nbsp;</div>
+							<div class="dcContentAndList">
+
+								<p>
+								<div id="feed-control">
+									<span style="color:#676767;font-size:11px;margin:10px;padding:4px;">Loading...</span>
+								</div>
+								</p>
+  
+							</div>
+
+
+						</td>
+
+						<td class="dcRegCenter dcContent dcVertLineDot">
+							<h2 style="color: #619210">Description</h2>
+         {{app.description}}
+							<div class="dcHorizLineDot">&nbsp;</div>
+							
+						</td>
+
+					</tr>							
+
+
+				</table>
+
+
+
+<!-- Content goes here -->
+
+			</div>
+				
+            <div class="dcFooter">
+                <div class="dcBar">
+                    <span class="dcFooterList">
+                    	<h4 class="dcFooterLabel">District News</h4>
+                        <ul>
+                            <li><a href="http://dc.gov/mayor/schedule.asp" title="Press Briefings &amp; Schedules">Press Briefings &amp; Schedules</a></li>
+                            <li><a href="http://dc.gov/mayor/news/index.asp" title="Statements &amp; Releases">Statements &amp; Releases</a></li>
+                            <li><a href="http://dc.gov/mayor/newsletter.shtm" title="Newsletters">Newsletters</a></li>
+                            <li><a href="http://dc.gov/mayor/news/index.asp?portal_link=hr" title="Media Center">Media Center</a></li>
+                            <li><a href="http://dc.gov/index_vid2.asp?portal_link=rc" title="DC Webcasts">DC Webcasts</a></li>
+                            <li><a href="https://service.govdelivery.com/service/user.html?origin=&code=DCWASH" title="Subscribe">Subscribe</a></li>
+                            <li><a href="http://dc.gov/closures/index.asp" title="Closures">Closures</a></li>
+                        </ul>
+                    </span>
+                    <span class="dcFooterList">
+                    	<span class="dcFooterLabel">Information Centers</span>
+                        <ul>
+                            <li><a href="http://72hours.dc.gov" title="72hours Emergency Planning">72hours Emergency Planning</a></li>
+                            <li><a href="http://brc.dc.gov" title="Business">Business</a></li>
+                            <li><a href="http://consumer.dc.gov" title="Consumer Protection">Consumer Protection</a></li>
+                            <li><a href="http://edreform.dc.gov" title="Education">Education</a></li>
+                            <li><a href="http://hc.rrc.dc.gov" title="Health">Health</a></li>
+                            <li><a href="http://ssc.rrc.dc.gov" title="Social Services">Social Services</a></li>
+                            <li><a href="http://rrc.dc.gov" title="Residents">Residents</a></li>
+                            <li><a href="http://vrc.dc.gov" title="Visitors">Visitors</a></li>
+                        </ul>
+                    </span>
+                    <span class="dcFooterList">
+                    	<span class="dcFooterLabel">Community</span>
+                        <ul>
+                            <li><a href="http://calendar.dc.gov" title="Citywide Calendar">Citywide Calendar</a></li>
+                            <li><a href="http://census.dc.gov" title="Census">Census</a></li>
+                            <li><a href="#" title="DC Jobs">DC Jobs</a></li>
+                            <li><a href="#" title="DC Procurement">DC Procurement</a></li>
+                            <li><a href="http://green.dc.gov" title="Green DC">Green DC</a></li>
+                            <li><a href="http://dconecard.dc.gov" title="DC One Card">DC One Card</a></li>
+                            <li><a href="http://ich.dc.gov" title="Interagency on Homelessness">Interagency on Homelessness</a></li>
+                            <li><a href="http://recovery.dc.gov" title="Recovery.dc.gov">Recovery.dc.gov</a></li>
+                        </ul>
+                    </span>
+                    <span class="dcFooterList">
+                    	<span class="dcFooterLabel">DC Government</span>
+                        <ul>
+                            <li><a href="http://dc.gov//mayor/index.shtm?portal_link=h" title="Mayor's Office">Mayor's Office</a></li>
+                            <li><a href="http://dc.gov/agencies/index.asp" title="DC Agencies">DC Agencies</a></li>
+                            <li><a href="http://dc.gov/agencies/index.asp" title="DC Council">DC Council</a></li>
+                            <li><a href="http://www.grc.dc.gov/grc/cwp/view,a,1203,q,447121,pm,1,grcNav_GID,1424,,grcNav_GID,1421.asp" title="Elected Officials">Elected Officials</a></li>
+                            <li><a href="http://dc.gov/mayor/organization.shtm?portal_link=hr" title="District Appointees">District Appointees</a></li>
+                            <li><a href="http://capstat.oca.dc.gov/" title="CapStat">CapStat</a></li>
+                            <li><a href="http://grc.dc.gov/grc/cwp/view,a,1201,q,447114,pm,1,grcNav_GID,1422,.asp" title="Courts">Courts</a></li>
+                            <li><a href="http://grc.dc.gov/grc/cwp/view,a,1205,q,447198,pm,1,grcNav_GID,1423,,grcNav_GID,1422.asp" title="DC Law">DC Law</a></li>
+                            <li><a href="http://statehood.dc.gov" title="DC Statehood">DC Statehood</a></li>
+                        </ul>
+                    </span>
+                    <span class="dcFooterList">
+                    	<span class="dcFooterLabel">Contact Us</span>
+                        <ul>
+                            <li>Call 311</li>
+                            <li><a href="http://app.dc.gov/apps/about.asp?page=atd&type=dsf&referrer=%5b$DSF_SERVER_NAME$%5d&agency_id=1075&portal_link=hr" title="Contact the Mayor">Contact the Mayor</a></li>
+                            <li><a href="http://grc.dc.gov/grc/cwp/view,a,1175,q,447555.asp" title="Contact Agency Directors">Contact Agency Directors</a></li>
+                            <li><a href="http://dc.gov/contact/index.shtm" title="Send Feedback">Send Feedback</a></li>
+                            <li><a href="http://dc.gov/agencies/agency_search.asp?portal_link=fc" title="Search Telephone Directory">Search Telephone Directory</a></li>
+                            <li><a href="http://311.dc.gov" title="Submit Service Requests">Submit Service Requests</a></li>
+                            <li><a href="http://grc.dc.gov/foia" title="Make FOIA Requests">Make FOIA Requests</a></li>
+                        </ul>
+                    </span>
+                </div><!-- End Bottom Footer -->
+                <div class="dcBar">
+                    <span class="dcFooterListLower">
+                        <ul>
+                            <li class="dcFirstChild"><a href="http://dc.gov/accessibility.asp" title="Accessibility">Accessibility</a></li>
+                            <li class="dcDivider">|</li>
+                            <li><a href="http://dc.gov/translations.asp?portal_link=fc&page=http%3A//dc.gov/accessibility.asp" title="Translations">Translations</a></li>
+                            <li class="dcDivider">|</li>
+                            <li><a href="http://about.dc.gov/index.asp?portal_link=hr" title="DC Guide">DC Guide</a></li>
+                            <li class="dcDivider">|</li>
+                            <li><a href="http://wifi.dc.gov" title="Wi-Fi Hotspots">Wi-Fi Hotspots</a></li>
+                            <li class="dcDivider">|</li>
+                            <li class="dcLastChild"><a href="http://dc.gov/contact/index.shtm" title="Feedback">Feedback</a></li>
+                            <li class="dcDivider">|</li>
+                            <li class="dcLastChild"><a href="http://dc.gov/privacy.asp" title="Privacy &amp; Security">Privacy &amp; Security</a></li>
+                            <li class="dcDivider">|</li>
+                            <li class="dcLastChild"><a href="http://dc.gov/terms.asp" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+                        </ul>
+                    </span>
+                </div><!-- End Top Footer -->
+            </div><!-- End Footer Group -->
+		</div><!-- End DC Body Class -->
+		
+	</div><!-- End Layout Class -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-2638726-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+	</body>
+</html>	

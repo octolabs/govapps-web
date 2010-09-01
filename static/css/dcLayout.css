@@ -1,0 +1,309 @@
+#layout {
+	position: relative;	
+}
+
+.dcBody {
+	text-align: center;
+	width: 972px;
+	position: relative;
+}
+
+.dcRegMain {
+	padding-top: 32px;
+	padding-left: 14px !important; /* workingHere */
+	padding-right: 14px !important;
+	background-repeat:repeat-x;
+}
+
+.dcSkin0 .dcRegMain {
+	padding-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.dcLayoutVertSaver .dcRegMain {
+	padding-top: 0;
+}
+
+.dcRegLeft {
+	/* empty */
+}
+
+.dcRegLeftCenter {
+	padding-right: 24px;
+	width: 694px;
+	
+	text-align: left;
+}
+
+.dcPageClass_centerSite .dcRegLeft {
+	padding-right: 0;
+}
+
+.dcPageClass_centerSite .dcContent .dcRegRight,
+.dcPageClass_centerSite .dcContent.dcRegRight {
+	/*padding-left: 24px;*/
+	padding-left: 0;
+	
+	/*padding-right: 24px;*/
+	padding-right: 0;
+}
+
+.dcSkin0 .dcContent .dcRegRight,
+.dcSkin0 .dcContent.dcRegRight {
+	padding-left: 24px;
+	padding-right: 0;
+}
+
+
+.dcSkin0 .dcSkinBgImg {
+	/* empty - skin used to set width wider since there is no bgcolor */
+}
+
+.dcSkin1 .dcSkinBgImg,
+.dcSkin1A .dcSkinBgImg {
+	background-image:url(../img/page_bg1.jpg);
+}
+
+.dcSkin1 .dcQuickLinksCallout .leftAgencyNavTop {
+	background-color: #838383;
+}
+
+.dcSkin1 .dcQuickLinksCallout .leftAgencyNavBody {
+	background-image:url(../img/darkblue_gradient.jpg);
+	background-repeat:repeat-x;
+}
+
+.dcSkin2 .dcSkinBgImg {
+	background-image:url(../img/page_bg2.jpg);
+}
+.dcSkin2 .dcQuickLinksCallout .leftAgencyNavTop {
+	background-color: #bec4cf;
+}
+.dcSkin2 .dcQuickLinksCallout .leftAgencyNavBody {
+	background-image:url(../img/leftNav_gradient2.jpg);
+	background-repeat:repeat-x;
+}
+
+.dcSkin3 .dcSkinBgImg {
+	background-image:url(../img/page_bg3.jpg);
+}
+
+.dcSkin3 .dcQuickLinksCallout .leftAgencyNavTop {
+	background-color:#619210;
+}
+
+.dcSkin3 .dcQuickLinksCallout .leftAgencyNavBody {
+	background-image:url(../img/green_bck.jpg);
+	background-repeat:repeat-x;
+}
+
+.dcSkin4 .dcSkinBgImg {
+	background-image:url(../img/page_bg4.jpg);
+}
+
+.dcSkin4 .dcQuickLinksCallout .leftAgencyNavTop {
+	background-color:#ecdeca;
+}
+
+.dcSkin4 .dcQuickLinksCallout .leftAgencyNavBody {
+	background-image:url(../img/leftNav_gradient4.jpg);
+	background-repeat:repeat-x;
+}
+
+
+
+.dcSkin1 .dcSkinBg {
+	background-color: #DFDFDF;
+}
+
+.dcSkin1 .dcTopNavSubNavTopicPath .dcTopicPath {
+	background-color: #F2F2F2;
+}
+
+.dcSkin1A .dcSkinBg {
+	background-color: #F2F2F2;
+}
+
+.dcSkin2 .dcSkinBg {
+	background-color: #bec4cf;
+}
+
+.dcSkin3 .dcSkinBg {
+	background-color: #F3F3E6;
+}
+
+.dcSkin4 .dcSkinBg {
+	background-color: #fef6ea;
+}
+
+
+/* =================================================== */
+/* DCPS */
+/* =================================================== */
+/*body.dcSkin4 {
+	background-color: white;
+}
+
+.dcSkin4 .dcPageWrapper {
+	width: 1006px;
+	background-color: #C7CEDB;
+	border-left: 1px solid #A4AFB5;
+	border-right: 1px solid #A4AFB5;
+	border-bottom: 1px solid #A4AFB5;
+}
+
+.dcSkin4 .dcSkinBg {
+	background-color: #C7CEDB;
+}
+
+.dcSkin4 a {
+	color: #005283;
+}
+*/
+
+
+
+
+
+
+/* Page Types */
+.dcPageClass_centerSite .dcRegCenter {
+	padding-left: 24px; /* would be margin, but being applied to TD */
+	padding-right: 24px;
+	width: 490px;
+}
+
+
+
+.dcPageClass_agencySite .dcRegMain {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.dcPageClass_agencySite .dcRegLeft {
+	width: 223px;
+}
+
+
+
+.dcPageClass_agencySite.dcPageClass_accordion .dcRegLeft {
+	padding-right: 0 !important;
+	margin-right: 0 !important;
+}
+
+.dcPageClass_agencySite .dcRegCenter {
+	padding-left: 14px;
+	padding-right: 14px;
+	width: 319px;
+}
+
+.dcPageClass_agencySite .dcRegCenterRight {
+	padding-left: 14px;
+	padding-right: 14px;
+}
+
+.dcPageClass_agencySite .dcRegRight {
+	padding-left: 14px;
+	padding-right: 0 !important;
+	width: 319px;
+}
+
+.dcPageClass_agencySite.dcPageClass_accordion .dcRegMain {
+	padding-left: 14px !important;
+}
+
+.dcPageClass_agencySite_gdc.dcPageClass_sub .dcRegMain {
+	padding-left: 14px !important;
+}
+
+.dcPageClass_agencySite_gdc.dcPageClass_sub .dcRegLeft {
+	width: 220px;
+}
+
+
+.dcPageClass_agencySite_gdc.dcPageClass_sub .dcRegLeft2 {
+	width: 340x;
+}
+
+.dcPageClass_agencySite_gdc.dcPageClass_sub .dcRegCenter,
+.dcPageClass_agencySite_gdc.dcPageClass_sub .dcRegRight {
+	width: 340px;
+}
+
+.dcPageClass_agencySite_film .dcRegMain {
+	/* empty */
+}
+
+
+
+
+
+
+
+
+
+/* Phase II Effort */
+
+.dcPageClass_photo {
+	/* empty */
+} 
+
+.dcPageClass_photo .dcRegLeft {
+	width: 221px;
+	padding-right: 0 !important;
+}
+
+
+
+
+
+
+.dcPageClass_forum {
+	/* empty */
+}
+
+.dcPageClass_forum .dcHighlights h2 {
+	margin-top: 40px;
+}
+
+.dcPageClass_forum .dcRegLeft {
+	width: 180px;
+	padding-right: 0 !important;
+}
+
+.dcPageClass_forum .dcRegCenterRight {
+	/* empty */
+}
+
+.dcPageClass_forumMain .dcRegCenterRight {
+	/* empty */
+}
+
+.dcLayout_leftJustify .dcRegMain {
+	padding-left: 14px !important;	
+}
+
+.dcLayout_leftJustify .dcTitle {
+	text-align: left;
+}
+
+.dcLayout_leftJustify .dcTitle h1{
+	padding: 0;
+	margin: -2px;
+}
+
+.dcLayout_dcTopNavSubNavTopicPath .dcRegMain {
+	padding-top: 10px;
+}
+
+
+
+
+* html .dcPageClass_agencySite .dcSubNav_item select { /* IE6 hack */
+	margin-bottom: 4px;
+}
+
+* html .dcPageClass_film .dcSubNav_item select { /* IE6 hack */
+	margin-bottom: 4px;
+}

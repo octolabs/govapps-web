@@ -1,0 +1,86 @@
+.dcDepNav {
+	text-align: left;
+}
+
+.dcDepNav li {
+	list-style: none;
+	display: inline;
+	padding-right: 4px;
+}
+
+.dcDepNav_dcra {	
+	background-color: #F1F6FC;
+	
+	padding: 6px 8px 0px 8px;
+	margin-bottom: 16px;
+	
+	border-width: 1px 0 1px 0;
+	border-color: #BAC5DB;
+	border-style: solid;
+	
+	height: 20px;
+	
+	line-height: 15px;
+}
+
+
+.dcDepNav_greenDc {
+	text-align: left;
+	
+	position: relative;
+	margin-left: -16px;
+	padding-right: 32px;
+	
+	width: 100%;
+	height: 41px;
+	
+	/*background-image: url(../img/greenline.jpg);*/
+	background-repeat: repeat-x;
+}
+
+* html .dcDepNav_greenDc {
+	width: 940px;   IE6 hack */
+	position: absolute;
+	left: 16px;
+}
+
+.dcDepNav_greenDc .dcWrapper {
+	text-align: left;
+	
+	position: relative;
+	top: 1px;	
+	padding-right: 12px;
+	
+	width: 100%;
+	height: 40px;
+	
+	background-image: url(../img/green_gradient.jpg);
+	background-repeat: repeat-x;	
+	background-color: #EBF6D8;	
+}
+
+* html .dcDepNav_greenDc .dcWrapper {
+	/*padding-right: 16px;  IE6 hack */
+	position: absolute;
+	width: 100%;
+}
+
+.dcDepNav_greenDc ul {
+	padding-top: 9px;
+	padding-left: 16px;
+}
+
+.dcDepNav_greenDc li.dcDivider {
+	color: #A9ABA5;
+	font-size: 16px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.dcDepNav_greenDc .dcMsg {
+	position: absolute;
+	right: 85px;
+	top: 10px;
+}
+
+

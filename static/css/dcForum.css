@@ -1,0 +1,354 @@
+
+.dcPageClass_forum .dcContent h2 {
+	margin-top: 24px;
+}
+
+.dcPageClass_forum .dcForumRow .dcContent h2 {
+	margin-top: 0;
+}
+
+.dcPageClass_forum .dcSubPost .dcContent h2 {
+	font-size: 13px;
+}
+
+
+
+
+
+
+
+.dcForumRow td {
+	padding-top: 24px;
+}
+
+
+.dcPaginator * {
+	font-size: 12px;
+}
+
+.dcPaginator {
+	float: right;
+}
+
+.dcPaginator ul,
+.dcPaginator li,
+.dcPaginator dl,
+.dcPaginator dt,
+.dcPaginator dd,
+.dcThreadSummary ul,
+.dcThreadSummary li,
+.dcThreadSummary dl,
+.dcThreadSummary dt,
+.dcThreadSummary dd {
+	display: inline;
+	list-style: none;
+}
+
+.dcPaginator dt,
+.dcThreadSummary dt {
+	font-weight: bold;
+}
+
+.dcPaginator .dcDivider {
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.dcPaginator li li {
+	padding-left: 3px;
+}
+
+.dcThreadSummary li {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0;
+}
+
+.dcThreadSummary .dcDivider {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.dcThreadSummary dt {
+	padding-right: 3px;
+}
+
+
+.dcThreadSummary {	
+	vertical-align: top;
+}
+
+.dcThreadSummary .dcAvatar {
+	float: left;
+	padding-right: 10px;
+}
+
+.dcThreadSummary *,
+.dcThreadSummary h3 {
+	font-size: 13px;
+}
+
+.dcThreadSummary h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+}
+
+.dcThreadAuthorSummary {
+	line-height: 16px;
+}
+
+
+
+
+
+
+.dcThreadContent .dcTimestamp {
+	float: right;
+}
+
+.dcForumActionBar .dcButton {
+	float: right;
+	padding-left: 6px;
+}
+
+.dcThreadContent .dcLastP {
+	padding-bottom: 0;
+	margin-bottom: 4px;
+}
+
+.dcForumListBar td {
+	background-image: url(../img/dots/GDC_hdots.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	
+	padding-top: 14px;
+	padding-bottom: 4px;
+}
+
+.dcForumListBar ul,
+.dcForumListBar li {
+	display: inline;
+	list-style: none;	
+}
+
+.dcForumListBar li {
+	margin-left: 0;
+	padding-left: 0;
+	
+	padding-right: 2px;
+}
+
+.dcSubPost .dcIconButton {
+	float: left;
+	padding-right: 3px;
+	padding-top: 2px;	
+}
+
+.dcSubPost .dcRegLeft {
+	background-image: url(../img/dots/GDC_hdots.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+.dcSubPost.dcLastChild .dcRegLeft {
+	background-image: none;		
+}
+
+.dcSubPost .dcForumActionBar {
+	padding-bottom: 30px;
+}
+
+.dcPopup h5 {
+	margin-bottom: 8px;
+	padding-bottom: 0;
+}
+
+.dcPopup p {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+
+
+
+
+/* Min/Max Show/Hide */
+
+.dcPageClass_forum .dcHidden {
+	display: none;
+}
+
+.dcMinView .dcThreadAuthorSummaryDetail {
+	display: none;
+}
+
+.dcMinView .dcForumActionBar {
+	display: none;
+}
+
+.dcMinView .dcAvatar {
+	display: none;
+}
+
+.dcAvatarMin {
+	display: none;
+}
+
+.dcMinView .dcAvatarMin {
+	display: inline;
+}
+
+.dcMinView .dcThreadSummary .dcRow {
+	display: none;
+}
+
+.dcMinView .dcThreadContent p {
+	display: none;
+}
+
+.dcContentMin {
+	display: none;
+}
+
+.dcMinView .dcContentMin {
+	display: block !important;
+}
+
+.dcMinView * {
+	color: #AAA297 !important;
+}
+
+a.dcDisabled {
+	text-decoration: none;
+	color: #2E2E2E;
+}
+
+a.dcDisabled:hover {
+	text-decoration: none;
+	color: #2E2E2E;
+}
+
+
+
+
+
+
+
+/* Forum Main -Specific */
+.dcBricklet .dcContent {
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.dcBricklet .dcTitleBar h2 {
+	margin-top: 0;
+}
+
+
+
+
+
+
+
+.dcFeaturedForum {
+	background-color: white;
+}
+
+.dcFeaturedForum p a {
+	padding-left: 4px;
+}
+
+.dcFeaturedForum table {
+	width: 100%;
+}
+
+.dcFeaturedForum td,
+.dcPopularForum td.dcCol2 {
+	border-bottom: 1px dotted #2E2E2E;
+}
+
+.dcFeaturedForum tr.dcLastChild td,
+.dcPopularForum tr.dcLastChild td {
+	border-bottom: none;
+}
+
+.dcFeaturedForum p {
+	margin-bottom: 12px;
+}
+
+.dcFeaturedForum .dcCol1 {
+	width: 480px;
+}
+
+.dcFeaturedForum .dcCol2 {
+	width: 94px;
+	text-align: right;
+}
+
+.dcFeaturedForum .dcCol3 {
+	text-align: right;	
+}
+
+.dcFeaturedForum .dcCol2,
+.dcFeaturedForum .dcCol3 {
+	vertical-align: bottom;
+}
+
+.dcFeaturedForum .dcCol2 p {
+	padding-right: 30px;
+}
+
+.dcFeaturedForum .dcCol3 p {
+	padding-right: 28px;
+}
+
+.dcFeaturedForum .dcCol2 h2,
+.dcFeaturedForum .dcCol3 h2 {
+	text-align: center !important;
+}
+
+.dcFeaturedForum .dcCol3 h2 {
+	padding-right: 4px;
+}
+
+.dcFeaturedForum td {
+	padding-top: 14px;
+}
+
+.dcFeaturedForum tr.dcFirstChild td{
+	padding-top: 0;
+}
+
+
+
+.dcPopularForum.dcBricklet .dcContent {
+	padding-bottom: 4px;
+	margin-bottom: 0;
+	
+	padding-top: 4px;
+	margin-top: 0;
+}
+
+.dcPopularForum td {
+	padding-top: 12px;
+}
+
+.dcPopularForum .dcShareIcon {
+	float: right;
+}
+
+.dcPopularForum .dcForumCount {
+	float: right;
+}
+
+.dcPopularForum .dcCol1 {
+	padding-top: 16px;
+	padding-right: 10px;
+}
+
+.dcPopularForum .dcCol2 p {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+

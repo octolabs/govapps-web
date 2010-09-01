@@ -1,0 +1,36 @@
+.dcInfoNav {
+	width: 203px;
+}
+
+.dcInfoNav ul {
+	height: 600px;
+}
+
+.dcInfoNav li {
+	list-style: none;
+	font-size: 12px;
+	
+	padding: 10px 4px 0 0;
+}
+
+.dcInfoNav li a {
+	padding-left: 2px;
+}
+
+.dcInfoNav a:hover {
+	color: #2E2E2E;
+	text-decoration: none;
+}
+
+.dcInfoNav .dcArrow {
+	display: inline;
+}
+
+.dcInfoNav .dcArrow {
+	visibility: hidden;
+}
+
+.dcInfoNav .dcSelected .dcArrow {
+	visibility: visible;
+}
+

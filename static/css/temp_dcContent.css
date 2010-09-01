@@ -1,0 +1,72 @@
+.dcContent {
+	text-align: left;
+	vertical-align: top;
+}
+
+td.dcContent,
+.dcContent td {
+	vertical-align: top;
+}
+
+.dcContent h2.dcCaption {
+	margin-top: 8px;
+	margin-bottom: 24px;
+	font-size: 18px;
+}
+
+.dcContent h3 {
+	font-size: 16px;
+	color: #5B6F87;
+	
+	margin-top: 24px;
+	margin-bottom: 8px;
+}
+
+.dcContent p {
+	margin-bottom: 12px;
+	font-size: 12px;
+}
+
+
+
+.dcHorizLineDot {
+	background-image: url(../img/hline_dot.png);
+	background-repeat: repeat-x;
+	height: 40px;
+}
+
+.dcVertLineDot {
+	background-image: url(../img/vline_dot.png);
+	background-repeat: repeat-y;
+}
+
+.dcCallout {
+	margin-bottom: 14px;
+}
+
+.dcCallout.dcLastChild {
+	margin-bottom: 0px;
+}
+
+
+
+	
+.dcQuickLinksCallout table.dcQuickLinksCallout {	
+	margin-left: 14px;
+	margin-right: 14px;
+}
+	
+.dcQuickLinksCallout td {
+	/*font-family: tahoma !important;*/
+}
+
+.dcQuickLinksCallout h2,
+.dcQuickLinksCallout h3 {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+	
+
+
+

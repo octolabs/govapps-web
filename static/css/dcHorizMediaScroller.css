@@ -1,0 +1,129 @@
+.dcHorizMediaScroller div#wn	{
+	position:relative;
+	width:400px;
+	height:70px;
+	overflow:hidden;
+}
+
+.dcHorizMediaScroller div#wn2 {
+height:70px;
+overflow:hidden;
+position:relative;
+width:285px;
+}
+
+.dcHorizMediaScroller {
+	padding: 10px;
+	
+	/*height: 84px;*/
+	
+	background-color: #BBC1CD;
+/*	background-image:url(../img/scrolling_bck.jpg); Hidden for Related Media Table OCTO 1.0*/
+	background-image:url(../img/nondcps/calendar_bg_gradation.gif);
+	background-repeat:repeat-x;
+	background-position: top left;
+	
+/*	border-color: #828A93;
+	border-style: solid;
+	border-width: 1px 0 0 0; Hidden for Related Media Table OCTO 1.0*/
+}
+
+
+.dcHorizMediaScroller .dcThumbListWrapper {
+	width: 100%;	
+}
+
+.dcHorizMediaScroller h3 {
+	padding-bottom: 12px;
+	font-size: 13px;
+	font-weight: bold;
+	/*font-family: Tahoma, Arial;*/
+}
+
+.dcBricklet .dcHorizMediaScroller h3,
+.dcBricklet .dcHorizMediaScroller .dcThumbWrapper {
+	padding-bottom: 0;
+}
+
+.dcBricklet .dcHorizMediaScroller .dcThumbWrapper .dcLabel {
+	line-height: 15px;
+} 
+
+.dcHorizMediaScroller .dcArrow {
+	padding-top: 17px;
+}
+
+.dcHorizMediaScroller .dcArrowLeft {
+	padding-right: 8px;
+}
+
+.dcHorizMediaScroller .dcArrowRight {
+	padding-left: 8px;
+	padding-right: 9px;
+}
+
+.dcHorizMediaScroller .dcThumbWrapper {
+	padding-left: 15px;
+	padding-right: 16px;
+	padding-bottom: 12px;
+}
+
+.dcHorizMediaScroller .dcThumbWrapper.dcFirstChild {
+	padding-left: 0;
+}
+
+.dcHorizMediaScroller .dcThumbWrapper.dcLastChild {
+	padding-right: 0;
+}
+
+.dcHorizMediaScroller .dcThumbWrapper .dcLabel {
+	text-align: center;
+	font-size:11px;
+	font-weight: bold;
+	padding-top: 3px;	
+}
+
+.dcHorizMediaScroller .dcThumbWrapper a .dcLabel {
+	text-align: center;
+	font-size:11px;
+	color: #2E2E2E;
+	padding-top: 0;
+}
+
+.dcHorizMediaScroller .dcThumbWrapper a:hover .dcLabel {
+	text-decoration: underline;
+	color: #0157B0;
+}
+
+/* Begin OCTO New 1.0 */
+
+.dcThumbListWrapper ul {
+	background-color: ;
+	height: 100%;
+	vertical-align: top;
+}
+
+.dcThumbListWrapper li {
+	top: .75em;
+	/*height: 30px; */
+	padding: 2px;
+	top: 5px;
+	vertical-align: top;
+}
+.dcThumbListWrapper .dcRelatedTableNav td {
+font-weight:bold;
+
+}
+
+.dcThumbListWrapper li {
+	*top: 7px; /* IE hack */
+}
+
+.dcPictureScroller {
+		bottom:13px;
+		left:90px;
+		position:absolute;
+}
+
+
+/* End OCTO New 1.0 */

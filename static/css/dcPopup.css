@@ -1,0 +1,68 @@
+.dcPopup {
+	border: 1px solid #CCCCCC !important;
+	/*padding: 12px !important;*/
+	/*padding: 4px !important;*/
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #FFFFFF !important;
+	z-index: 1000000 !important;
+	color: #4C4C4C !important;
+	overflow:visible !important;
+	text-align:left !important;
+}
+
+.dcPopup .dcCloseButton {
+	position: absolute;
+	top: 5px; 
+	right: 5px;
+	z-index: 2000000 !important;
+}
+
+.dcPopup h5 /*.dcPopupTitle*/ {
+	background:#F2F2F2 none repeat scroll 0 0;
+	border-bottom:1px solid #E5E5E5;
+	cursor:default;
+	padding:5px;
+	line-height:14px;
+	position:relative;
+	text-align:center;
+	font-size:13px;
+}
+
+/*.dcPopup h5 {
+	font-size: 12px !important;
+	font-weight: bold !important;
+	color: #2E2E2E !important;
+}*/
+
+.dcPopup p {
+	font-size: 12px !important;
+	font-weight: normal !important;
+	padding:5px;
+}
+
+.dcPopup a {
+	color: #0157B0 !important;
+}
+
+.dcPopup .dcMore {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+}
+
+#popupcontent {
+	position: absolute;
+	visibility: hidden;
+	overflow: hidden;
+	border:1px solid #CCC;
+	background-color:#F9F9F9;
+	border:1px solid #333;
+	padding:5px;
+}
+
+.sharePopup { /* Octo 1.0 */
+	font-size:11px;
+	text-align:left;
+}

@@ -1,0 +1,110 @@
+/* Start Rounded corner tabs */
+
+.ofTabRounded {
+	position: relative;
+	/*height: 2000px*/
+}
+
+ul.ofTabUl {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 2
+}
+
+li.ofTabLi {
+	background: transparent url(../img/tab/tb_gray_lft.jpg) left top no-repeat;
+	display: block;
+	float: left;
+	list-style-type: none;
+	margin: -1px 4px 0 0;
+	padding: 0;
+	height: 22px;
+}
+
+.ofTabHead {
+	padding-left: 16px;
+	cursor: pointer;
+}
+
+.ofTabHead .ofTabHeadRight {
+	background: transparent url(../img/tab/tb_gray_rt.jpg) right top no-repeat;
+	padding: 4px 16px 4px 0;
+	text-align: center;
+	font: 12px tahoma
+}
+
+.ofTabHead a {
+	text-decoration: none;
+	color: #ffffff
+}
+
+.ofTabHead a:hover {
+	text-decoration: underline
+}
+
+.ofTabContent {
+	position: absolute;
+	left: -2000px;
+	top: 33px;
+	height: 1px;
+	overflow: hidden
+}
+
+li.ofSelected .ofTabHead {
+	background: transparent url(../img/tab/tb_wt_lft.jpg) left top no-repeat;
+	height: 23px;
+}
+
+li.ofSelected .ofTabHead .ofTabHeadRight {
+	background: transparent url(../img/tab/tb_wt_rt.jpg) right top no-repeat;
+	height: 15px;
+}
+
+li.ofSelected .ofTabHead a  {
+	color: #000
+}
+
+li.ofSelected .ofTabContent {
+	left: 0;
+	height: auto;
+	overflow: visible
+}
+
+.ofTopCap,
+.ofTopCapOnlyWithNoCorners {
+	background: transparent url(../img/tab/pixel.gif) repeat-x left top;
+	background-color: white;
+	position: relative;
+	top: 21px;
+	z-index: 1
+}
+
+.ofTopCap .ofTopCapRight,
+.ofTopCapOnlyWithNoCorners .ofTopCapRight {
+	background: transparent url(../img/tab/rc_toprt.gif) no-repeat right top;
+	height: 12px
+}
+
+.ofTopCapOnlyWithNoCorners .ofTopCapRight {	
+	background: transparent;
+	height: 12px
+}
+
+.ofTopCap .ofTopCapLeft,
+.ofTopCapOnlyWithNoCorners .ofTopCapLeft {
+	background: transparent url(../img/tab/rc_topleft.gif) repeat-y left top
+}
+
+.ofTopCapOnlyWithNoCorners .ofTopCapLeft {
+	background: transparent;
+}
+
+.ofMultiLine .ofTabContent {
+	top: 47px
+}
+
+.ofMultiLine .ofTopCap {
+	top: 35px
+}

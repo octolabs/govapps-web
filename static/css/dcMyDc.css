@@ -1,0 +1,186 @@
+.dcPageClass_myDc .dcRegMain {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	padding-top: 11px;
+}
+
+.dcPageClass_myDc .dcTitle h1 {
+	font-size:  36px;
+	color: #E91B39;
+	padding-bottom: 45px;
+}
+
+.dcPageClass_myDc .dcSubNav_item {
+	font-size: 12px;
+}
+
+.dcCalloutBar {
+	text-align: left;
+	
+	padding: 0 5px 0 5px;
+	
+	font-size: 12px;
+	width: 140px;
+	border: 1px solid #D5CCBE;
+	
+	background-image: url(../img/mydc/bricklet_mini_bg.gif);
+	background-repeat: repeat-x;
+	background-position: bottom left;
+}
+
+.dcCalloutBar .dcWrapper {
+	padding-top: 5px;
+	vertical-align: middle;
+	height: 21px;
+}
+
+.dcCalloutBar .dcIcon img {
+	padding-top: 2px;
+}
+
+.dcCalloutBar .dcIcon img {
+	*padding-top: 0; /* IE hack */
+}
+
+.dcCalloutBar .dcTxt {
+	
+	vertical-align: top;
+	padding-left: 6px;
+}
+
+.dcCalloutBar .dcTxt.dcFirstChild {
+	padding-left: 0;
+}
+
+.dcCalloutBar .dcButton {
+	float: right;
+	padding-top: 4px;
+}
+
+.dcCalloutBar .dcButton {
+	*padding-top: 1px; /* IE hack */
+}
+
+
+.dcSince .dcContent {
+	font-size: 12px;
+	width: 140px;
+	border-color: #D5CCBE;
+	border-style: solid;
+	border-width: 0 1px 1px 1px;
+	
+	padding: 5px;
+}
+
+
+
+
+
+
+.dcPageClass_myDc .dcVertDivider {
+	border-width: 0 0 0 1px;
+	border-style: solid;
+	border-color: #D5CCBE;
+}
+
+.dcPageClass_myDc .dcContent .dcTitleBar {
+	padding-bottom: 6px;
+}
+
+.dcPageClass_myDc .dcAlerts,
+.dcPageClass_myDc .dcTitleBar {
+	text-align: left;
+}
+
+.dcPageClass_myDc .dcTitleBar h3 {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.dcPageClass_myDc .dcTitleBar .dcMore {
+	float: right;
+	font-size: 11px;
+}
+
+.dcPageClass_myDc .dcAlerts {
+	margin-left: 24px;
+	line-height: 15px;
+}
+
+.dcPageClass_myDc .dcAlerts li {
+	text-align: bottom;
+	margin-top: 10px;
+	padding-top: 7px;
+	padding-left: 0 !important;	
+}
+
+.dcPageClass_myDc .dcAlerts li {
+	*padding-left: 4px !important; /* IE hack */
+}	
+
+.dcPageClass_myDc .dcAlerts li a {
+	position: relative;
+	top: -2px;
+}
+
+.dcPageClass_myDc .dcAlerts li a {
+	*top: -1px; /* IE hack */
+}
+
+.dcPageClass_myDc .dcAlerts li.dcUnread {
+	list-style-image: url(../img/mydc/alerts_icon_lit.gif);
+}
+
+.dcPageClass_myDc .dcAlerts li.dcRead {
+	list-style-image: url(../img/mydc/alerts_icon.gif);
+}
+
+.dcPageClass_myDc .dcContainer {
+	padding: 14px 12px 0px 12px;
+}
+
+.dcPageClass_myDc .dcContainer.dcFirstChild {
+	/* padding-left: 0; */
+}
+
+
+
+
+.dcSingleImgScroller .dcPictureFrame {
+	border: 1px solid #D5CCBE;
+}
+
+.dcSingleImgScroller .dcPictureFrame img {
+	padding: 2px 3px;
+}
+
+.dcSingleImgScroller .dcScroller {
+	text-align: center;
+	padding-top: 3px;
+}
+
+.dcSingleImgScroller .dcButtonLeft {
+	padding-bottom: 6px;
+}
+
+.dcSingleImgScroller .dcButtonRight {
+	padding-left: 4px;
+	padding-bottom: 6px;
+}
+
+.dcHorizPics {
+	text-align: left;
+}
+
+.dcHorizPics td {
+	padding-right: 8px;
+}
+
+.dcHorizPics .dcPictureFrame {
+	border: 1px solid #D5CCBE;
+}
+
+.dcHorizPics .dcPictureFrame img {
+	padding: 3px 3px;
+}
+

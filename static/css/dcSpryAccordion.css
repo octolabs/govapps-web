@@ -1,0 +1,442 @@
+
+/* SpryAccordion.css - Revision: Spry Preview Release 1.4 */
+
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+
+/* This is the selector for the main Accordion container. For our default style,
+ * we draw borders on the left, right, and bottom. The top border of the Accordion
+ * will be rendered by the first AccordionPanelTab which never moves.
+ *
+ * If you want to constrain the width of the Accordion widget, set a width on
+ * the Accordion container. By default, our accordion expands horizontally to fill
+ * up available space.
+ *
+ * The name of the class ("Accordion") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style the
+ * Accordion container.
+ */
+.Accordion {
+	overflow: hidden;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #CDCCCA;
+	border-bottom-color: #CDCDCD;
+	border-left-color: #CDCCCA;
+	width: 221px;
+	
+	text-align: left;
+}
+
+.Accordion {
+	*margin-top:-3px;
+}
+
+/* This is the selector for the AccordionPanel container which houses the
+ * panel tab and a panel content area. It doesn't render visually, but we
+ * make sure that it has zero margin and padding.
+ *
+ * The name of the class ("AccordionPanel") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style an
+ * accordion panel container.
+*/
+.AccordionPanel {
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+/* This is the selector for the AccordionPanelTab. This container houses
+ * the title for the panel. This is also the container that the user clicks
+ * on to open a specific panel.
+ *
+ * The name of the class ("AccordionPanelTab") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style an
+ * accordion panel tab container.
+ */
+.AccordionPanelTab {
+	background-image: url(../img/accordian_icons/tab_bck.jpg);
+	background-position: bottom left;
+	background-repeat: repeat-x;
+	background-color: white;
+	
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	padding: 0px;
+	border-top-width: 1px;
+	border-bottom-width: 0px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #CDCDCD;
+	border-bottom-color: #CDCDCD;
+
+	line-height: 31px;
+	text-indent: 9px;
+	margin: 0px;
+	height: 33px;
+	width: 221px;
+}
+.AccordionPanelTab1 {
+	background-image: url(../img/accordian_icons/tab_bck.jpg);
+	background-position: bottom left;
+	background-repeat: repeat-x;
+	background-color: white;
+	
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	padding: 0px;
+	border-top-width: 1px;
+	border-bottom-width: 0;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #ffffff;
+	border-bottom-color: #CDCDCD;
+	line-height: 28px;
+	font-size:12px;
+	text-indent: 9px;
+	margin: 0px;
+	height: 28px;
+	width: 221px;
+}
+
+/* This is the selector for a Panel's Content area. It's important to note that
+ * you should never put any padding on the panel's content area if you plan to
+ * use the Accordions panel animations. Placing a non-zero padding on the content
+ * area can cause the accordion to abruptly grow in height while the panels animate.
+ *
+ * Anyone who styles an Accordion *MUST* specify a height on the Accordion Panel
+ * Content container.
+ *
+ * The name of the class ("AccordionPanelContent") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style an
+ * accordion panel content container.
+ */
+.AccordionPanelContent {
+	overflow: auto;
+	margin: 0px;
+	padding: 0px;
+	/* height: 296px; */ 
+	background-color: #FFFFFF;
+}
+
+/* This is an example of how to change the appearance of the panel tab that is
+ * currently open. The class "AccordionPanelOpen" is programatically added and removed
+ * from panels as the user clicks on the tabs within the Accordion.
+ */
+.AccordionPanelOpen .AccordionPanelTab {
+	background-image: url(../img/accordian_icons/tab_bck.jpg);
+	border-bottom-width: 1px;
+	border-bottom-color: #CDCDCD;
+}
+
+
+/* This is an example of how to change the appearance of the panel tab as the
+ * mouse hovers over it. The class "AccordionPanelTabHover" is programatically added
+ * and removed from panel tab containers as the mouse enters and exits the tab container.
+ */
+.AccordionPanelTabHover {
+	color: #000000;
+}
+.AccordionPanelOpen .AccordionPanelTabHover {
+	color: #000000;
+	
+}
+
+/* This is an example of how to change the appearance of all the panel tabs when the
+ * Accordion has focus. The "AccordionFocused" class is programatically added and removed
+ * whenever the Accordion gains or loses keyboard focus.
+ */
+.AccordionFocused .AccordionPanelTab {
+	background-image: url(../img/accordian_icons/tab_bck.jpg);
+	border-bottom-width: 0px;
+	border-bottom-color: #ffffff;
+}
+.AccordionFocused .AccordionPanelTab1 {
+	background-image: url(../img/accordian_icons/tab_bck.jpg);
+	border-bottom-width: 0px;
+	border-bottom-color: red;
+}
+
+
+/* This is an example of how to change the appearance of the panel tab that is
+ * currently open when the Accordion has focus.
+ */
+.AccordionFocused .AccordionPanelOpen .AccordionPanelTab1 {
+	background-image: url(../img/accordian_icons/tab_bck.jpg);
+	border-bottom-width: 1px;
+	border-bottom-color: #CDCDCD;
+}
+.AccordionFocused .AccordionPanelOpen .AccordionPanelTab {
+	background-image: url(../img/accordian_icons/tab_bck.jpg);
+	border-bottom-width: 1px;
+	border-bottom-color: #CDCDCD;
+	
+	line-height: 31px;
+	font-size: 12px;
+	color: #2e2e2e;
+	text-indent: 9px;
+
+}
+.AccordionFocused .AccordionPanelOpen .AccordionPanelTab1 {
+	background-image: url(../img/accordian_icons/tab_bck.jpg);
+	border-bottom-width: 1px;
+	border-bottom-color: #CDCDCD;
+	
+	line-height: 28px;
+	font-size:12px;
+	color: #2e2e2e;
+	text-indent: 9px;
+
+}
+
+
+
+.AccordionBodyContentLinksArrows {
+	
+	font-size: 15px;
+	color: #0157B0;
+	font-weight: normal;
+	line-height: 15px;
+}
+.sectionspacer {
+	background-image: url(../img/accordian_icons/grey_spacer.jpg);
+	height: 32px;
+	background-repeat: repeat;
+
+}
+
+.AccordionBodyViewAllLinks a:link {font-size: 13px; color: #0157B0; font-weight: normal; height: 32px; text-decoration: none; }
+.AccordionBodyViewAllLinks a:visited {font-size: 13px; color: #0157B0; font-weight: normal; height: 32px; text-decoration: none; }
+.AccordionBodyViewAllLinks a:hover {font-size: 13px; color: #0157B0; font-weight: normal; height: 32px; text-decoration: none; }
+.AccordionBodyViewAllLinks a:active{font-size: 13px; color: #0157B0; font-weight: normal; height: 32px; text-decoration: none; }
+.AccordionBodyViewAllLinks{font-size: 13px; color: #0157B0; font-weight: normal; height: 32px; text-decoration: none; }
+
+
+/* New Team, New CSS Dec08 */
+
+.dcAccordion li {
+	list-style: none;
+}
+
+.dcAccordionCapWrapper {
+	height: 5px;
+	text-align: top;
+	line-height:2px;
+	font-size:2px;
+	position: relative;
+}
+
+.dcAccordionCap {
+	/* empty */
+}
+
+.dcAccordionPanelWrapper {
+	/* empty */
+}
+
+.dcAccordionPanel h2 {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	color: #0157B0;
+	margin: 0px;
+	padding: 0px;
+}
+
+.dcAccordionPanelContent {
+	/* empty */
+}
+
+.dcAccordionSubContent {	
+	margin-bottom: 12px;
+	margin-right: 18px;	
+	padding-top: 12px;
+	padding-left: 8px;
+	cursor: pointer;
+	
+	background-image: url(../img/accordian_icons/grey_spacer.jpg);
+	background-position: 0px -16px;
+	
+	background-repeat: repeat-x;
+	
+}
+
+.dcAccordionSubContent.dcFirstChild,
+.dcAccordionSubContent.dcAccordionBodyViewAllLinks {
+	background: none;
+}
+
+.dcAccordionSubContent h3 {
+	font-weight: normal;
+	font-size: 13px;
+	
+	color: #2E2E2E;
+	line-height: normal;
+}
+
+.dcAccordionSubContent p {
+	font-size: 13px;
+	color: #707070;
+	line-height: normal;
+}
+
+.dcAccordionSubContent a {
+	
+	font-size: 13px;
+	color: #0157B0;
+	font-weight: normal;
+	/*font-family: Tahoma;*/
+	text-decoration: none;
+	
+}
+
+.dcAccordionSubContent a:link  {
+	
+	font-size: 13px;
+	color: #0157B0;
+	font-weight: normal;
+	text-decoration: none;
+}	
+.dcAccordionSubContent a:visited{
+	
+	font-size: 13px;
+	color: #0157B0;
+	font-weight: normal;
+	text-decoration: none;
+}	
+.dcAccordionSubContent a:hover{
+	
+	font-size: 13px;
+	color: #0157B0;
+	font-weight: normal;
+	text-decoration: underline;
+}	
+
+.dcAccordionIcon {
+	float:left;
+	margin-right:10px;
+	margin-top:4px;
+}
+
+.dcAccordionIcon img {
+	width: 45px;
+	height: 60px;
+	border: 0;
+}
+
+.dcLastChild {
+	margin-bottom: 0;
+}
+
+/* ******************** */
+/* Flyout  				*/
+/* ******************** */
+
+.dcFlyoutWrapper {
+	position: absolute; /* for flyout relationship */
+	display: none; /* display on via JS adding class */
+	z-index: 5000;	
+}
+
+.dcFlyout {
+	border: 1px solid #A8A8A8;
+	width:226px; /* when width changes, must also update width in dcAccorion.js */
+	
+	z-index: 2000;
+		
+	position: absolute;
+	top: 0;
+}
+
+.dcFlyoutOn {
+	display: block;	
+}
+
+.dcFlyoutTopBar,
+.dcFlyoutBottomBar {
+	background: url(../img/flyout_gradient.jpg);
+		
+	font-size: 13px;
+	color: #DA1A02;
+	
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	
+	height: 24px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #D3D3D1;
+	border-bottom-color: #D3D3D1;
+	vertical-align: middle;	
+}
+
+* html .dcFlyoutTopBar { /* IE6, but could possibly work as general */
+	background-position: bottom;
+}
+
+
+.dcFlyoutTopBar .dcPagerStatus {	
+	position: absolute;
+	left:0;
+	margin-top: 3px;
+	margin-left: 10px;
+	
+}
+
+.dcFlyoutBottomBar .dcFlyoutBottomBarInfo {
+	position: absolute;
+	left:0;
+	margin-top: 3px;
+	margin-left: 10px;
+	
+}
+
+.dcFlyoutTopBar .dcScrollerUp,
+.dcFlyoutTopBar .dcScrollerUp {
+	text-align: center;
+}
+
+.dcFlyoutTopBar .dcCloseIcon {
+	position: absolute;
+	right: 0;
+	top: -2px;
+	padding: 6px;
+	cursor: pointer;	
+}
+
+.dcFlyout li {
+	height: 44px;
+	
+	line-height: 44px;
+	color: #2e2e2e;
+	background-color: #ffffff;
+	text-decoration:none;
+	border-bottom-width: 1px;
+	border-bottom-color: #D3D3D1;
+	border-bottom-style: solid;
+	font-size: 13px;
+	
+	list-style: none;
+	padding: 0 8px 0 8px;
+}
+
+.dcFlyout li.flyoutOn {		
+	color: #ffffff;
+	background-image: url(../img/flyout_rollover_bck.jpg);
+	background-repeat: repeat;
+	cursor:pointer;	
+	
+	list-style: none;
+}
+
+

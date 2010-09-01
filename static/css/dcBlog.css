@@ -1,0 +1,62 @@
+.dcBlogEntry {
+	margin-bottom: 26px;
+}
+
+.dcBlogEntry.dcLastChild {
+	margin-bottom: 8px;
+}
+
+
+.dcBlogEntryHeader h2 {
+	font-size: 14px;
+	margin-bottom: 6px;
+	padding-top: 16px;
+	margin-top: 12px !important;
+}
+
+.dcBlogEntryHeader .dcBlogMeta {
+	float: right;
+}
+
+.dcBlogEntry p.dcLastChild {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.dcBlogEntry .dcComments {
+	margin-top: 6px;
+}
+
+.dcBlogEntry .dcComments a {
+	margin-right: 6px;
+}
+
+
+.dcPageClass_blog .dcBlogNav {
+	float: right;
+}
+
+.dcPageClass_blog .dcContent ul,
+.dcPageClass_blog .dcContent li {
+	display: inline;
+}
+
+.dcPageClass_blog .dcContent li {
+	margin-left: 4px;
+	font-size: 13px;
+}
+
+.dcPageClass_blog .dcQuickLinksCallout dl,
+.dcPageClass_blog .dcQuickLinksCallout dt,
+.dcPageClass_blog .dcQuickLinksCallout dd  {
+
+	display:inline;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+
+}
+
+.dcPageClass_blog .dcQuickLinksCallout dt {
+	font-weight: bold;
+}

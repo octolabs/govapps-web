@@ -1,0 +1,360 @@
+.dcMasthead {
+	width: 100%;
+}
+
+.dcLogo {
+	margin-left: 17px;
+	margin-right: 44px;
+	margin-top: 41px;
+	width: 150px;
+}
+
+.dcSearchBar {
+	margin-right: 0;
+	margin-top: 56px;
+	vertical-align: top;
+	text-align: left;
+	padding-left: 25px;
+}
+
+.dcSearchBar fieldset {
+	vertical-align: top;
+	border: none;
+}
+
+.dcSearchForm_leftCap img {
+		margin: 0;
+		padding: 0;
+}
+
+.dcSearchForm {
+	background-repeat: repeat-x;
+	background-image: url(../img/gsearchbar_repeat.jpg);
+	background-position: top left;
+	
+	width:331px; 
+	height:28px; 
+	/*line-height: 33px;*/
+	
+	border: 0;
+	
+	margin-left: 0;
+	margin-top: 0px;
+	margin-bottom: 0;
+	
+	padding-left: 10px;
+	padding-top: 5px;
+	
+	font-size: 16px;
+}
+
+.dcSearchForm,
+.dcSearchButton {
+	position: relative;	
+	margin-bottom: 0;
+}
+
+.dcSearchForm_leftCap {
+	position: relative;
+	margin-bottom: 0;
+}
+
+.dcSearchForm,
+.dcSearchButton {
+	*top: 2px; /* to close/remove 1px white space between this and mirror img in IE(7) */
+}
+
+.dcSearchForm_leftCap {
+	*top: 3px; /* IE hack */
+}
+
+.dcSearchFilter {
+	background:url(../img/gsearch_mirror.jpg) no-repeat;
+	background-position:  0px 0px;
+}
+
+.dcSearchButton {
+	margin-top: 0px;
+	margin-left: -4px;
+}
+
+.dcSearchButton {
+	*margin-top: 1px; /* target IE6+IE7 */
+}
+
+.dcActionBar {
+	margin-top: 22px;			
+	height: 30px;
+	
+	font-size: 11px;
+	color: #2E2E2E;	
+	
+	vertical-align: top;
+	
+	background-color: #E2E2E2;
+}
+
+.dcHeaderLinks {
+	font-size: 11px;
+	color: #2E2E2E;	
+	vertical-align: top;
+}
+
+.dcActionBar .dcLeftCorner {
+	background-image: url(../img/regBoxLeft.gif);
+	background-repeat: no-repeat;
+	width: 8px;
+	height: 30px;
+	float: left;
+}
+
+.dcActionBar .dcRightCorner {
+	background-image: url(../img/regBoxRight.gif);
+	background-repeat: no-repeat;
+	width: 8px;
+	height: 30px;
+	float: right;
+}
+
+.dcActionBar a {
+	color: #0157B0;
+	text-decoration: none;
+}
+
+.dcActionBar ul {
+	background-color: #E2E2E2;
+	height: 100%;
+	text-align: center;
+	vertical-align: top;
+}
+
+.dcActionBar li {
+	display: inline;
+	position: relative;
+	top: .75em;
+	height: 30px;
+	padding: 2px;
+	
+	position: relative;
+	top: 5px;
+
+	vertical-align: top;
+}
+
+.dcActionBar li {
+	*top: 7px; /* IE hack */
+}
+
+.dcActionBar li.dcFirstChild {
+	/* empty */
+}
+
+/*OCTO 1.0 New*/
+.dcHeaderLinks {
+	font-size: 11px;
+	color: #2E2E2E;	
+	vertical-align: top;
+	text-align:right;
+}
+
+.dcHeaderLinks li {
+	display: inline;
+	vertical-align: top;
+	padding: 2px;
+}
+
+.dcActionBar2 {
+	margin-top: 0px;
+	margin-bottom: 12px;			
+	height: 30px;
+	font-size: 12px;
+	color: #2E2E2E;	
+	vertical-align: top;
+	background-color: #E2E2E2;
+}
+.dcActionBar2 .dcLeftCorner {
+	background-image: url(../img/regBoxLeft.gif);
+	background-repeat: no-repeat;
+	width: 8px;
+	height: 30px;
+	float: left;
+}
+
+.dcActionBar2 .dcRightCorner {
+	background-image: url(../img/regBoxRight.gif);
+	background-repeat: no-repeat;
+	width: 8px;
+	height: 30px;
+	float: right;
+}
+
+.dcActionBar2 a {
+	color: #0157B0;
+	text-decoration: none;
+
+}
+
+
+.dcActionBar2 ul {
+	background-color: #E2E2E2;
+	height: 100%;
+	text-align: center;
+	
+	vertical-align: top;
+}
+
+.dcActionBar2 li a:hover{
+	color: #0157b0;
+	text-decoration:underline;
+}
+
+.dcActionBar2 li {
+	display: inline;
+	position: relative;
+	top: .75em;
+	height: 30px;
+	padding: 2px;
+	top: 5px;
+
+	vertical-align: top;
+}
+
+
+.dcActionBar2 li {
+	*top: 7px; /* IE hack */
+}
+
+.dcActionBar2 li.dcFirstChild {
+	/* empty */
+}
+
+.dcBodyActionBarContainer {
+	border-color:#8A98A4;
+	border-style: solid none none solid;
+	border-width:1px;
+	float:right;
+	margin-left: 15px;
+}
+
+.dcBodyActionBar {
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	color: #2E2E2E;	
+	vertical-align: top;
+	
+	width:300px;
+	
+
+}
+.dcBodyActionBar2 {
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	color: #2E2E2E;	
+	vertical-align: top;
+	float:right;
+	width:300px;
+
+}
+
+.dcBodyActionBar a {
+	color: #0157B0;
+	text-decoration: none;
+}
+
+.dcBodyActionBar ul {
+
+	margin-left:20px;
+	vertical-align: top;
+	padding-bottom:10px;
+}
+
+.dcBodyActionBar li {
+	/*display: inline;*/
+	vertical-align: top;
+}
+
+.dcBodyActionBar li {
+	*top: 7px; /* IE hack */
+}
+
+.dcBodyActionBar li.dcFirstChild {
+	/* empty */
+}
+
+
+/*End OCTO 1.0 New*/
+
+
+.dcMasthead .dcMessage {
+	text-align: right;
+	margin-bottom: 8px;
+}
+
+.dcMasthead .dcMessage .dcAlert {
+	padding-left: 6px;
+}
+
+.dcMasthead .dcMessage .dcAlert em {
+	font-style: normal;
+	color: red;
+}
+
+.dcMasthead .dcMessage .dcAlert a {
+	color: red;
+}
+
+.dcMasthead .dcMessage .dcAlert a:hover {
+	text-decoration: underline;
+}
+
+
+
+/* =================================================== */
+/* DCPS */
+/* =================================================== */
+/*.dcSkin4 .dcMasthead {
+	background-image: url(../img/dcps/masthead_verticalgradient.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #C7CEDB;
+}
+
+.dcSkin4 .dcMasthead {
+	padding-right: 14px;
+}
+
+.dcPageClass_dcps .dcMasthead .dcLogo {
+	margin-top: 0;
+	margin-left: 0;
+}
+
+.dcPageClass_dcps td.dcLogo {
+	text-align: left;
+}
+
+.dcPageClass_dcps .dcMasthead .dcSearchBar {
+	margin-top: 20px;
+}
+
+.dcPageClass_dcps .dcMasthead .dcSearchFilter {
+	background-image: none;
+}
+
+.dcPageClass_dcps .dcMessage {
+	position: relative;
+	top: -6px;
+	margin-bottom: 0;
+}
+
+.dcPageClass_dcps .dcMessage {
+	font-size: 11px;
+}
+
+.dcPageClass_dcps .dcSearchForm {
+	background-image: url(../img/dcps/gsearchbar_repeat.jpg);
+}*/

@@ -1,0 +1,89 @@
+.dcPictureContent {
+	text-align: left;
+}
+
+.dcPictureContent h1 {
+	/* empty */.
+}
+
+.dcPictureContent .dcPictureFrame {
+	background-color:#F6F6F7;
+	border:1px solid #B4B4B4;
+	padding: 10px;
+	text-align: center;
+	
+	margin-bottom: 18px; 	
+}
+
+.dcPictureContent .dcSansPicture {
+	/* empty */
+}
+
+.dcPictureContent .dcCaption {
+	/* empty */
+}
+
+.dcPictureContent .dcDate {
+	/* empty */
+}
+
+
+.dcPictureFrame2 {
+	margin:5px;
+
+}
+			
+.dcPictureContent2 .dcPictureFrame2 {
+	background-color:#F6F6F7;
+	border:1px solid #B4B4B4;
+	margin-bottom:18px;
+	padding:10px;
+	text-align:center;
+	width:145px;
+	float:right;
+}
+.dcPictureContent3 .dcPictureFrame3 {
+	background-color:#F6F6F7;
+	border:1px solid #D5CCBE;
+	margin-bottom:18px;
+	padding:10px;
+	text-align:center;
+}
+
+.dcPictureContentWidth206 .dcPictureFrameWidth206 {
+	background-color:#F6F6F7;
+	border:1px solid #B4B4B4;
+	margin-bottom:10px;
+	margin-right:10px;
+	padding:10px;
+	text-align:center;
+	width:206px;
+	float:left;
+}
+.dcMediaPictureFrame {
+
+
+}
+			
+.dcMediaPictureContent .dcMediaPictureFrame {
+	background-color:#F6F6F7;
+	border:1px solid #B4B4B4;
+	margin-bottom:18px;
+	padding:10px;
+	text-align:center;
+	width:418px;
+}
+
+.dcMediaPictureContentFeaturesPage .dcMediaPictureFrameFeaturesPage {
+	background-color:#F6F6F7;
+	border:1px solid #B4B4B4;
+	margin-bottom:18px;
+	padding:10px;
+	text-align:center;
+	width:254px;
+}
+
+
+
+
+

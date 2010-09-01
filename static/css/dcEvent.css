@@ -1,0 +1,195 @@
+.dcPageClass_event {
+	/* empty */
+}
+
+.dcPageClass_event .dcRegCenterRight {
+	text-align: left;
+	padding-left: 24px;
+	padding-right: 0;
+}
+
+.dcPageClass_event h3.dcFirstChild {
+	margin-top: 0;
+}
+
+.dcPageClass_phase2 .dcHorizMediaScroller div#wn {
+	position:relative;
+	width:505px;
+	height:70px;
+	overflow:hidden;
+}
+
+
+.dcPageClass_event table.dcEventList {
+	background-color: white;
+	
+	border-color: #D5CCBE;
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	
+	border-collapse: collapse;
+}
+
+.dcPageClass_event .dcEventList th {
+	font-size: 13px;
+	font-weight: bold;
+	color: #626161;
+	
+	border-color: #D5CCBE;
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	
+	border-collapse: collapse;
+}
+
+.dcPageClass_event .dcEventList tr.dcPaginator {
+	float: none;
+}
+
+.dcPageClass_event .dcEventList tr.dcPaginator td {
+	border-color: #D5CCBE;
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	text-align: left;
+}
+
+.dcPageClass_event div.dcPaginator {
+	float: left;
+	padding-left: 12px;
+}
+
+.dcPageClass_event .dcResultsMeta {
+	float: left;
+}
+
+.dcPageClass_event tr.dcPaginator td {
+	width: 100%;
+}
+
+.dcPageClass_event .dcEventList th a {
+	color: #626161;
+}
+
+.dcPageClass_event .dcEventList th img {
+	padding-left: 2px;
+}
+
+.dcPageClass_event .dcEventList th img.dcIconUnsort {
+	margin-bottom: 1px;
+}
+
+.dcPageClass_event .dcEventList td {
+	color: #626161;
+}
+
+.dcPageClass_event .dcEventList td {
+	padding: 4px 8px 4px 8px;
+}
+
+.dcPageClass_event .dcEventList tr.dcRowOdd td {
+	background-color: #F7F7F7;
+}
+
+.dcPageClass_event .dcEventList tr.dcSelected td{
+	background-color: #dee1e8 !important;
+}
+
+.dcPageClass_event .dcEventList th div {
+	padding-left: 8px;
+	padding-bottom: 4px;
+	padding-top: 5px;
+}
+
+
+.dcPageClass_event .dcEventList th div {
+	margin: 1px;
+	background-image: url(../img/mydc/bricklet_bar_bg.gif);
+	background-repeat: repeat-x;
+	
+}
+
+.dcPageClass_event .dcPictureFrame {
+	position: relative;
+}
+
+.dcPageClass_event .dcPictureFrame .dcSlideNavTop {
+	position: absolute;
+	top: 18px;
+	left: 170px;
+}
+
+.dcPageClass_event .dcPictureFrame .dcSlideNav {
+	position: absolute;
+	bottom: 12px;
+	left: 46px;
+}
+
+.dcPageClass_event .dcPictureFrame .dcSlideNav .dcIconButton {
+	position: relative;
+	bottom: 8px;	
+}
+
+.dcPageClass_event .dcPictureFrame .dcSlideNav img.dcLastChild,
+.dcPageClass_event .dcPictureFrame .dcSlideNav img {
+	padding-left: 8px;
+}
+
+.dcPageClass_event .dcPictureFrame .dcSlideNav .dcIconButton {
+	padding-left: 0;
+}
+
+
+
+.dcFeaturedEvent {
+	position:static;
+}
+
+.dcFeaturedEvent .dcPhoto {
+	float: left;
+	margin-right: 10px;
+	padding-top: 4px;
+}
+
+.dcFeaturedEvent .dcPhotoRight {
+	float: right;
+	margin-right: 10px;
+	padding-top: 4px;
+}
+
+.dcFeaturedEvent .dcPhoto p {
+	font-size: 12px;
+}
+
+.dcFeaturedEvent .dcActionList {
+	float: right;
+	/*z-index:2000;*/
+}
+
+.dcFeaturedEvent .dcHorizRule {
+	position: relative;
+	right: -124px;
+	width: 543px;
+}
+
+.dcHorizRuleFull{
+	border-style:dotted;
+	border-width:1px 0 0;
+	line-height:14px;
+	margin-top:18px;
+}
+
+
+.dcListingPaginator {
+	float: left;
+	padding-left: 12px;
+}
+
+.dcListingPaginator ul li
+{
+	display: inline;
+	list-style: none;
+	with
+}
+.dcListingPaginator li {
+	padding-left: 5px;
+}

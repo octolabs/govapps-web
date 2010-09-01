@@ -1,0 +1,62 @@
+.dcSurvey {
+	width: 315px;
+	border: 2px solid #D5CCBE;
+	padding: 1px;
+}
+
+.dcSurvey .dcWrapper {
+	border: 1px solid #D5CCBE;
+	padding: 11px 8px 11px 8px;
+	
+	background-image: url(../img/SurveysPolls_bg.jpg);
+	background-repeat: repeat-x;
+}
+
+.dcSurvey h2 {
+	display: inline;
+	font-size: 16px;
+}
+
+.dcSurvey h3 {
+	margin-top: 4px;
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+
+.dcSurvey .dcMore {
+	padding-left: 8px;
+}
+
+.dcSurvey table {
+	margin-top: 8px;
+}
+
+.dcSurvey td {	 
+	 vertical-align: bottom;
+	 padding-left: 12px !important;
+	 padding-right: 12px !important;
+}
+
+.dcSurvey td div {
+	padding-top: 8px;
+}
+
+.dcSurvey td.dcFirstChild {
+	border-width: 0 1px 0 0;
+	border-style: solid;
+	border-color: #D5CCBE;
+	width: 52%;
+}
+
+.dcSurvey a {
+	font-size: 11px;
+}
+
+.dcSurvey label {
+	padding-left: 4px;
+}
+
+.dcSurvey .dcButton {
+	padding-left: 6px;
+	vertical-align: middle;
+}

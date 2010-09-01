@@ -1,0 +1,36 @@
+.dcVideoGrid {
+	width: 324px;
+}
+
+.dcVideoGrid td {
+	vertical-align: top;
+}
+
+.dcVideoGrid .dcThumbContent {
+	display:none;
+}
+
+.dcVideoGrid .dcThumbContent.dcSelected {
+	display:block;
+}
+
+.dcVideoGrid .dcThumb {
+	padding-top: 12px;
+	padding-right: 10px;
+	
+	position: relative;
+} 
+
+.dcVideoGrid .dcThumb.dcLastChild {
+	padding-right: 0;
+}
+
+.dcVideoGrid .dcThumbContent {
+	padding-top: 14px;
+}
+
+.dcVideoGrid .dcTrailerButton {
+	position: absolute;
+	left: 0;
+	top: 68px;
+}

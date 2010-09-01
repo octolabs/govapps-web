@@ -1,0 +1,84 @@
+.dcBoxRoundGradient {
+	background-image: url(../img/dcps/gradient_vert_blubrick_sub.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+	
+	background-color: #779FD3;
+	
+	position: relative;
+	
+	width: 316px;
+}
+
+.dcBoxRoundGradient .dcContent {
+	padding: 12px 12px 15px 14px;
+	
+	color: white;
+}
+
+.dcBoxRoundGradient .dcContent *,
+.dcBoxRoundGradient .dcContent h3 {	
+	color: white;
+}
+
+.dcBoxRoundGradient h2 {
+	font-size: 16px;
+	font-weight: normal;
+	border-bottom: 1px solid #9192AF;
+	
+	color: white;
+	
+	width: 100%;
+}
+
+.dcBoxRoundGradient .dcContent h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.dcBoxRoundGradient .dcContent p {
+	margin-bottom: 10px;
+}
+
+.dcBoxRoundGradient .dcContent .dcMessage { 
+	position: absolute;
+	font-size: 10px !important;
+	top: 12px;
+	right: 0;
+	padding-right: 12px;
+}
+
+.dcBoxRoundGradient .dcContent .dcMessage .dcBar .dcLinks li {
+	font-size: 10px !important;
+	margin-left: 1px;
+	vertical-align: bottom;	
+}
+
+
+
+
+
+
+.dcBoxRoundGradient .dcRound_tl {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.dcBoxRoundGradient .dcRound_tr {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.dcBoxRoundGradient .dcRound_bl {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.dcBoxRoundGradient .dcRound_br {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}

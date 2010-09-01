@@ -1,0 +1,514 @@
+.dcPageClass_dcps .dcFooter {
+	z-index: 800;
+	position: relative;
+}
+.dcPageClass_dcps .dcFooter a{
+	/* empty */
+}
+
+
+.dcPageClass_dcps  .downarrowclass {
+	padding-top: 5px;
+}
+
+.dcPageClass_dcps .dcRegMain {
+	padding-top: 12px;
+}
+
+
+.dcPageClass_dcps .dcTopicPath .dcDivider {
+	color:#959595 !important;
+	padding:0 4px !important;
+}
+
+.dcPageClass_dcps .dcTopicPath li {
+	padding-top: 6px !important;		
+	height: 25px;	
+	display: inline;	
+}
+
+.dcPageClass_dcps .dcTopicPath {
+	height:49px !important;
+	padding:12px 12px 2px 12px !important;
+	float: left;
+}
+
+.dcPageClass_dcps .dcTopicPath {
+	*height:39px !important; /* IE hack */
+}
+
+.dcPageClass_dcps .dcTopNav .dcTopNav_item a:hover {
+	background-image: url(../img/dcps/dropmenu_triangle.gif);
+	
+}
+
+.dcPageClass_dcps .dcTopNav .dcTopNav_item.dcSelected {
+	height: 50px;
+}
+
+
+.dcPageClass_dcps .dcMessage {
+	*right: 12px; /* IE hack */
+}
+
+.dcPageClass_dcps .dcSearchForm {
+	width: 270px;
+}
+
+.dcSearchFilter {
+	/* empty */
+}
+
+
+.dcPageClass_dcps .dcBar ul,
+.dcPageClass_dcps .dcBar li{
+	display: inline;
+	list-style: none;
+}
+
+.dcPageClass_dcps .dcVisualWrapper {
+	background-image: url(../img/dcps/gradient_vert_grayblock.jpg);
+	background-repeat: repeat-x;
+	
+	border: none;
+	
+	padding: 12px;
+	
+	margin-bottom: 0; /* was 12 */
+	margin-left: 0;
+	
+	position: relative;
+	top: -5px;
+}
+
+.dcPageClass_dcps .dcVisualWrapper {
+	*top: -3px; /* IE hack */
+}
+
+.dcPageClass_dcps .dcFullWidth,
+.dcPageClass_dcps .dcRegMain {
+	margin: 0;
+	
+	
+	margin-right: 0 !important;
+	padding-right: 0 !important;
+	
+	margin-left: 0 !important;
+	padding-left: 0 !important;
+}
+
+.dcPageClass_dcps .dcPictureContent {
+	float: right;	
+	margin-bottom: 6px;
+}
+
+.dcPageClass_dcps .dcPictureFrame {
+	position: relative;
+}
+
+.dcPageClass_dcps .dcPictureFrame .dcPictureScroller {
+	position: absolute;
+	bottom: 12px;
+	left: 90px;
+}
+
+.dcPageClass_dcps .dcPictureFrame .dcPictureScroller li {
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.dcPageClass_dcps .dcPictureFrame .dcPictureScroller .dcArrow {
+	display: inline;
+	position: relative;
+	bottom: 6px;
+	cursor: pointer;
+}
+
+.dcPageClass_dcps .dcPictureFrame .dcPictureScroller .dcRightArrow {
+	margin-left: 5px;	
+}
+
+.dcPageClass_dcps .dcPictureFrame .dcPictureScroller .dcGroupWrapper {
+	position: relative;
+}
+
+
+.dcPageClass_dcps .dcMediaNavigator {
+	height: 325px;
+	
+	text-align: center;
+	
+	background-image: url(../img/dcps/gradient_vert_rediscovbox.jpg);
+	background-repeat: repeat-x;
+	
+	width: 272px;		
+}
+
+.dcPageClass_dcps .dcMediaNavigator .dcWrapper {	
+	padding: 25px 20px 10px 20px;
+}
+
+.dcPageClass_dcps .dcMediaNavigator h2 {
+	color: white;
+	font-size: 23px;
+	font-weight: bold;
+	
+	line-height: 26px;
+}
+
+.dcPageClass_dcps .dcMediaNavigator h3 {
+	font-size: 17px;
+	font-weight: normal;
+	color: white;
+	
+	margin-top: 4px;
+	margin-bottom: 0;
+}
+
+.dcPageClass_dcps .dcMediaNavigator p {
+	font-size: 12px;
+	color: white;
+	line-height: 15px;
+}
+
+.dcPageClass_dcps .dcMediaNavigator ul {
+	/* empty */
+}
+
+.dcPageClass_dcps .dcMediaNavigator li {
+	margin-left: 2px;
+}
+
+.dcPageClass_dcps .dcMediaNavigator li img {
+	padding-top: 22px;
+}
+
+
+
+
+
+
+.dcPageClass_dcps .dcMediaNavigator {
+	padding: 8px;
+}
+
+.dcPageClass_dcps .dcMediaNavigator .dcTopBorder {
+	background-color: #BAC3CA; height: 1px; line-height: 1px;
+}
+
+.dcPageClass_dcps .dcMediaNavigator .dcBottomBorder {
+	background-color: #7C858C; height: 1px; line-height: 1px;
+}
+
+.dcPageClass_dcps .dcMediaNavigator .dcMiddle {
+	height: 307px; width: 270px;
+}
+
+.dcPageClass_dcps .dcMediaNavigator .dcLeftBorder,
+.dcPageClass_dcps .dcMediaNavigator .dcRightBorder {
+	width: 1px; 
+	margin: 0; 
+	padding: 0; 
+	overflow: hidden; 
+	background-image: url(../img/dcps/gradient_vert_grayblock.jpg); 
+	background-repeat: repeat-x;
+}
+
+
+
+
+.dcPageClass_dcps .dcMore {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.dcPageClass_dcps_sub .dcMore {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+
+.dcPageClass_dcps .dcBoxRoundGradient a {
+	color:white !important;
+}
+
+.dcPageClass_dcps_sub .dcBoxRoundGradient a {
+	color:#005283 !important;
+}
+
+
+
+
+
+
+
+
+.dcPageClass_dcps .dcBox {
+	width: 316px;
+}
+
+.dcPageClass_dcps .dcBox h2 {
+	font-size: 12px;
+	font-weight: bold;
+	
+	margin-top: 14px;
+	margin-bottom: 7px;
+	padding-bottom: 3px;
+	
+	width: 100%;
+	border-bottom: 1px solid #ADAEA8;	
+}
+
+.dcPageClass_dcps .dcBox .dcContent p {
+	margin-bottom: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+.dcPageClass_dcps .dcHighlights {
+	margin-top: 38px;
+	height: 160px;
+	margin-left: 69px;
+}
+
+.dcPageClass_dcps .dcHighlights {
+	*margin-left: 50px;
+}
+
+
+.dcPageClass_dcps .dcHighlights h2 {
+	font-size: 20px;
+	font-weight: normal;
+	color: #005283;
+}
+
+.dcPageClass_dcps .dcHighlights .dcThumbScrollWrapper table {
+	width: 820px;
+}
+
+.dcPageClass_dcps .dcHighlights .dcThumbScrollWrapper td {
+	width: 212px;
+	padding-right: 12px;
+} 
+
+.dcPageClass_dcps .dcHighlights .dcArrow {
+	padding-top: 48px;
+	padding-left: 12px;
+}
+
+.dcPageClass_dcps #scrollLinksright_td {
+	padding-left: 0;
+	text-align: left;
+}
+
+.dcPageClass_dcps #scrollLinksright {
+	padding-left: 0;
+}
+
+div#wn {
+	width:760px;
+}
+
+
+
+
+
+
+
+.dcPageClass_dcps .dcFooter * {
+	font-size: 11px;
+	/*font-family: tahoma;*/
+}
+
+.dcPageClass_dcps .dcFooter p {
+	margin-top: 8px;
+	color: #4C5357;
+}
+
+.dcFooterLogo {
+	padding-left: 12px;
+	position: relative;
+	top: 6px;
+}
+
+
+
+
+/* DCPS Sub */
+
+.dcPageClass_dcps .dcRegLeft {
+	width: 228px;
+	padding-right: 24px;
+}
+
+.dcPageClass_dcps .dcListNav {
+	line-height: 15px;
+}
+
+.dcPageClass_dcps .dcListNav {
+	color: white;
+	background-color: #7094CE;
+}
+
+.dcPageClass_dcps .dcListNav a {
+	color: white;
+}
+
+.dcPageClass_dcps .dcListNav ul {	
+	display: block;
+}
+
+.dcPageClass_dcps .dcListNav li {
+	
+	list-style: none;
+	background-image: url(../img/dcps/bullet_sub.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 12px;
+		
+	text-align: left;	
+	border-bottom: 1px solid white;
+	
+	padding-left: 20px;
+	padding-right: 20px;	
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.dcPageClass_dcps .dcListNav li.dcLastChild {
+	border-bottom: none;
+}
+
+
+.dcPageClass_dcps .dcQuickLinksCallout h2 {
+	background-color:#838383;
+	color:#FFFFFF;
+	font-size:13px;
+	padding:4px 4px 4px 8px;
+	text-align:left;
+	
+	margin-top: 26px;
+}
+
+.dcPageClass_dcps_sub .dcPictureFrame {
+	width: 418px;
+	float: left;
+	margin-right: 24px;
+}
+
+.dcPageClass_dcps_sub .dcPictureContent {
+	float: none;	
+}
+
+.dcPageClass_dcps_sub .dcQuickLinksCallout h2 {
+	background-color:#4D70A8;
+	color:#FFFFFF;
+	font-size:13px;
+	padding:4px 4px 4px 8px;
+	text-align:left;
+	
+	margin-top: 26px;
+	margin-bottom: 14px;
+}
+
+.dcPageClass_dcps_sub .dcQuickLinksCallout .dcContentWrapper {
+	line-height: 21px;
+}
+
+
+
+
+.dcPageClass_dcps_sub .dcBoxRoundGradient {
+	width: 350px;
+}
+
+.dcPageClass_dcps_sub .dcBoxRoundGradient .dcContent {
+	padding-bottom: 8px;
+}
+
+.dcPageClass_dcps_sub .dcBoxRoundGradient h2 {
+	font-size: 16px;
+	margin-bottom: 12px;
+	padding-bottom: 3px;
+}
+
+.dcPageClass_dcps_sub .dcBoxRoundGradient h3 {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+
+.dcPageClass_dcps_sub .dcVideoSnip {
+	float: left;
+	margin-top: 4px;
+	margin-right: 16px;/**/
+}
+
+.dcPageClass_dcps_sub .dcHasOutsideContent {
+	margin-bottom: 23px;
+	position: relative;
+}
+
+.dcPageClass_dcps_sub .dcOutside {
+	position: absolute;
+	bottom: -22px;
+	right: 1px;
+}
+
+.dcPageClass_dcps_sub .dcRequestData {
+	/* empty */
+}
+
+.dcPageClass_dcps_sub .dcInputKeyword {
+	border: 1px solid #B3B3B3;
+	vertical-align: top;
+	height: 18px;
+	color: #B3B2B1;
+	font-size: 12px;
+	padding-left: 6px;
+	padding-right: 6px;
+	margin-right: 2px;
+	width: 145px;
+}
+
+.dcPageClass_dcps_sub .dcBox {
+	width: 348px;
+}
+
+
+.dcPageClass_dcps_sub .dcButtonLinks {
+	float: right;
+}
+
+.dcPageClass_dcps_sub .dcBoxRoundGradient {
+	height: 160px;
+	*height: 180px; /* IE hack */
+}
+
+.dcPageClass_dcps_sub .dcBoxRoundGradient .dcContent h2 {
+	vertical-align: top;
+}
+
+
+.dcPageClass_dcps_sub .dcBoxRoundGradient .dcContent,
+.dcPageClass_dcps_sub .dcBox .dcContent {
+	position: relative;
+}
+
+.dcPageClass_dcps_sub .dcBoxRoundGradient .dcButtonLinks {
+	position:absolute;
+	top: 12px;
+	right: 11px;
+}
+
+.dcPageClass_dcps_sub .dcBox .dcButtonLinks {
+	position:absolute;
+	top: 0;
+	right: 1px;
+}

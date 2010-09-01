@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.clear {
+	clear:both;
+}
+.pagetitle_sub {
+	height: 31px;
+	font-size: 24px;
+	color: #2E2E2E;
+	text-indent: 14px;
+
+}
+.pagetitle_sub em{
+	color: #9C9C9C;
+	text-indent: 14px;
+	font-style:normal;
+
+}
+
+div#wn	{
+	position:relative;
+	width: 824px;
+	height:276px;
+	overflow:hidden;
+	}

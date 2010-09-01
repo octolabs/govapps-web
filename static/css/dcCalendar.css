@@ -1,0 +1,142 @@
+.dcCalendar {
+	
+	width: 223px;
+	
+	margin-top: 5px;
+	
+	border-width: 0 1px 0 1px;
+	border-style: solid;
+	border-color: #B4B4B4;
+	
+	padding-top: 2px;
+	padding-bottom: 2px;
+	
+	background-image: url(../img/nondcps/calendar_bg_gradation.gif);
+	background-position: bottom;
+	background-color: white;
+	padding-right:0;
+	text-align:center;
+}
+
+.dcCalendar .dcTopCap {
+	position: relative;
+	top: -7px;
+}
+
+.dcCalendar .dcTopCap {
+	*top: -14px;
+}
+
+.dcCalendar .dcBottomCap {
+	position: relative;
+	bottom: -7px;
+}
+
+
+.dcCalendar table.dcMatrix {
+	width: 100%;
+}
+
+
+.dcCalendar table.dcMatrix td {
+	
+}
+
+.dcCalendar table.dcMatrix .dcCol1,
+.dcCalendar table.dcMatrix .dcCol2,
+.dcCalendar table.dcMatrix .dcCol8,
+.dcCalendar table.dcMatrix .dcCol9 {
+	background-color: none !important;
+}
+
+.dcCalendar table.dcMatrix .dcCol3,
+.dcCalendar table.dcMatrix .dcCol4,
+.dcCalendar table.dcMatrix .dcCol5,
+.dcCalendar table.dcMatrix .dcCol6,
+.dcCalendar table.dcMatrix .dcCol7 {
+	background-color: white !important;
+}
+
+.dcCalendar table.dcMatrix thead th {
+	background-color: #F6F7FB !important;
+	background-image: none !important;
+	font-weight: normal;
+}
+
+
+.dcCalendar .dcMonth {
+	margin-right: 4px;
+}
+
+.dcCalendar .dcMonth,
+.dcCalendar .dcYear {
+	font-size: 16px;
+}
+
+.dcCalendar .dcMatrix {
+	font-size: 12px;
+	margin-top: 8px;
+	margin-bottom: 10px;
+}
+
+.dcCalendar .dcCalendarSearch {
+	text-align: left;
+	margin-left: 12px;
+}
+
+.dcCalendar .dcCalendarSearch,
+.dcCalendar .dcCalendarSearch input,
+.dcCalendar .dcActionList {
+	font-size: 10px;
+}
+
+.dcCalendar .dcCalendarSearch span {
+	font-size: 11px;
+}
+
+.dcCalendar .dcSearchType {
+	font-size: 12px;
+	width: 120px;
+	padding-bottom: 2px;
+	margin-bottom: 6px;
+}
+
+.dcCalendar .dcCalendarSearch input {
+	width: 72px;
+	padding-top: 3px;
+	padding-bottom: 3px;	
+}
+
+.dcCalendar .dcIconButton {
+	vertical-align: bottom;
+	padding-left: 3px;
+}
+
+.dcCalendar .dcActionList {
+	margin-top: 4px;
+}
+
+.dcCalendar .dcActionList a {
+	margin-right: 10px;
+}
+
+.dcCalendar .dcMatrix tr.dcSelected td {
+	/*background-color: #A7D8EE;*/
+	background-color: #dee1e8;
+}
+
+.dcCalendar .dcMatrix tr.dcSelected td.dcEmpty {
+	background-color: transparent !important;
+}
+
+.dcCalendar .dcMatrix tr td.dcSelected {
+	background-color: #cad2e5;
+	font-size: 12px;
+	font-weight:bold;
+	color: #2E2E2E;	
+} 
+
+.dcCalendar td.dcPrevMonth,
+.dcCalendar td.dcNextMonth {
+	color: #5F7F7F;
+}
