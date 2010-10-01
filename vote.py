@@ -66,7 +66,7 @@ class VoteFeed (webapp.RequestHandler):
 <?xml version="1.0"?>
 <rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
 	<channel>
-		<description>DC App Store</description>
+		<description>DC Apps</description>
 		<language>en-us</language>
 		''')
 
